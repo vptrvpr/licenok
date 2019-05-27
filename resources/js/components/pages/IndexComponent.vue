@@ -33,7 +33,7 @@
                         </div>
                         <div class="opener" id="title-general">
 
-                            <h1 class="bottom-animation-title title-js">Частный десткий садик<br>
+                            <h1 class="bottom-animation-title title-js">Частный детский садик<br>
                                 <p class="color-orange bottom-animation-title">&laquo;Лисёнок&raquo;</p>
                             </h1>
                         </div>

@@ -13,7 +13,7 @@
                         <textarea rows="3" name="message" placeholder="Сообщение"></textarea>
                     </div>
                     <div class="text-right">
-                        <button type="submit" class="btn btn-orange">Звязаться со мной</button>
+                        <button type="submit" class="btn btn-orange">Связаться со мной</button>
                     </div>
                 </div>
             </div>

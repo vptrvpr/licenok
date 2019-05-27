@@ -6,7 +6,7 @@
                 <div class="row-base row">
                     <div class="brand-info col-base col-md-6 col-lg-5">
                         <a href="#top" class="brand js-target-scroll text-center">
-                            <p class="title-footer">Частный десткий садик<br>«Лисёнок»</p>
+                            <p class="title-footer">Частный детский садик<br>«Лисёнок»</p>
                         </a>
                     </div>
                     <div class="col-contacts col-base col-md-6 col-lg-6 text-right">

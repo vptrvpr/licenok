@@ -38237,7 +38237,7 @@ var staticRenderFns = [
               _c(
                 "button",
                 { staticClass: "btn btn-orange", attrs: { type: "submit" } },
-                [_vm._v("Звязаться со мной")]
+                [_vm._v("Связаться со мной")]
               )
             ])
           ])
@@ -38290,7 +38290,7 @@ var staticRenderFns = [
                   },
                   [
                     _c("p", { staticClass: "title-footer" }, [
-                      _vm._v("Частный десткий садик"),
+                      _vm._v("Частный детский садик"),
                       _c("br"),
                       _vm._v("«Лисёнок»")
                     ])
@@ -39306,7 +39306,7 @@ var staticRenderFns = [
               { staticClass: "opener", attrs: { id: "title-general" } },
               [
                 _c("h1", { staticClass: "bottom-animation-title title-js" }, [
-                  _vm._v("Частный десткий садик"),
+                  _vm._v("Частный детский садик"),
                   _c("br"),
                   _vm._v(" "),
                   _c(

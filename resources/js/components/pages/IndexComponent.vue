@@ -22,9 +22,9 @@
                                 <div class="col-md-7 col-sm-6 col-sx-6 hidden-md hidden-sm hidden-xs"></div>
                                 <div class="col-md-3 cloud-soc right-animation hidden-md hidden-sm hidden-xs">
                                     <div class="social-cloud ">
-                                        <a href="/#"><i class="fa fa-instagram"></i></a>
+                                        <a href="https://www.instagram.com/lisenok.surgut/?r=nametag" target="_blank"><i class="fa fa-instagram"></i></a>
                                         <a href="/#"><i class="fa fa-youtube"></i></a>
-                                        <a href="/#"><i class="fa fa-vk"></i></a>
+                                        <a href="https://vk.com/lisenok.surgut" target="_blank"><i class="fa fa-vk"></i></a>
                                     </div>
                                 </div>
 

@@ -38541,15 +38541,28 @@ var staticRenderFns = [
         ),
         _vm._v(" "),
         _c("ul", { staticClass: "social-list" }, [
-          _c("li", [
-            _c("a", { staticClass: "fa fa-instagram", attrs: { href: "" } })
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.instagram.com/lisenok.surgut/?r=nametag",
+                target: "_blank"
+              }
+            },
+            [_c("i", { staticClass: "fa fa-instagram" })]
+          ),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/#" } }, [
+            _c("i", { staticClass: "fa fa-youtube" })
           ]),
           _vm._v(" "),
-          _c("li", [
-            _c("a", { staticClass: "fa fa-youtube", attrs: { href: "" } })
-          ]),
-          _vm._v(" "),
-          _c("li", [_c("a", { staticClass: "fa fa-vk", attrs: { href: "" } })])
+          _c(
+            "a",
+            {
+              attrs: { href: "https://vk.com/lisenok.surgut", target: "_blank" }
+            },
+            [_c("i", { staticClass: "fa fa-vk" })]
+          )
         ]),
         _vm._v(" "),
         _c("nav", { staticClass: "nav-mobile" }, [
@@ -39284,17 +39297,32 @@ var staticRenderFns = [
                   },
                   [
                     _c("div", { staticClass: "social-cloud " }, [
-                      _c("a", { attrs: { href: "/#" } }, [
-                        _c("i", { staticClass: "fa fa-instagram" })
-                      ]),
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href:
+                              "https://www.instagram.com/lisenok.surgut/?r=nametag",
+                            target: "_blank"
+                          }
+                        },
+                        [_c("i", { staticClass: "fa fa-instagram" })]
+                      ),
                       _vm._v(" "),
                       _c("a", { attrs: { href: "/#" } }, [
                         _c("i", { staticClass: "fa fa-youtube" })
                       ]),
                       _vm._v(" "),
-                      _c("a", { attrs: { href: "/#" } }, [
-                        _c("i", { staticClass: "fa fa-vk" })
-                      ])
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: "https://vk.com/lisenok.surgut",
+                            target: "_blank"
+                          }
+                        },
+                        [_c("i", { staticClass: "fa fa-vk" })]
+                      )
                     ])
                   ]
                 )

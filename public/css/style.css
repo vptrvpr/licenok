@@ -2173,4 +2173,12 @@ main h1 {
 }
 
 
+#school {
+    width: 70vw;
+    height: 70vh;
+    position: relative;
+    overflow: visible;
+}
+
+
 

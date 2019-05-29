@@ -23,7 +23,7 @@
     @yield('content')
 </div>
 <script src="{{env('APP_URL')}}js/jquery.min.js"></script>
-<script src="{{env('APP_URL')}}js/app.js?1"></script>
+<script src="{{env('APP_URL')}}js/app.js?12"></script>
 <script src="{{env('APP_URL')}}js/bootstrap.min.js"></script>
 <script src="{{env('APP_URL')}}js/animsition.min.js"></script>
 <script src="{{env('APP_URL')}}js/smoothscroll.js"></script>
@@ -35,6 +35,7 @@
 <script src="{{env('APP_URL')}}js/isotope.pkgd.min.js"></script>
 <script src="{{env('APP_URL')}}js/imagesloaded.pkgd.js"></script>
 <script src="{{env('APP_URL')}}js/interface.js"></script>
+<script src="{{env('APP_URL')}}js/lazy-line-painter-1.9.6.min.js"></script>
 
 <script src="{{env('APP_URL')}}js/main.js"></script>
 

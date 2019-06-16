@@ -92,7 +92,7 @@
                                 <a href="/our_kindergarten">
                                     <figure class="showcase-item">
                                         <div class="showcase-item-thumbnail"><img alt=""
-                                                                                  src="img/sadik/asdweqs.jpg">
+                                                                                  src="img/sadik/asdasdasd.png">
                                         </div>
                                         <figcaption class="showcase-item-hover">
                                             <div class="showcase-item-info">

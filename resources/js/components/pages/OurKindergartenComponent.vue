@@ -137,7 +137,7 @@
                         <div class="isotope-item wedding">
                             <a href="img/sadik/DSC_0363.jpg" >
                                 <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/asdweqs.jpg">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/asdasdasd.png">
                                     </div>
                                     <figcaption class="showcase-item-hover2">
                                         <i class="icon-plus"></i>

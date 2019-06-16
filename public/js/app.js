@@ -39881,7 +39881,7 @@ var staticRenderFns = [
               _c("figure", { staticClass: "showcase-item" }, [
                 _c("div", { staticClass: "showcase-item-thumbnail" }, [
                   _c("img", {
-                    attrs: { alt: "", src: "img/sadik/asdweqs.jpg" }
+                    attrs: { alt: "", src: "img/sadik/asdasdasd.png" }
                   })
                 ]),
                 _vm._v(" "),
@@ -40180,7 +40180,7 @@ var staticRenderFns = [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/sadik/asdweqs.jpg" }
+                      attrs: { alt: "", src: "img/sadik/asdasdasd.png" }
                     })
                   ]),
                   _vm._v(" "),

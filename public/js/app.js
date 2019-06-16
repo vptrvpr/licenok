@@ -1815,8 +1815,54 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {}
+  data: function data() {
+    return {
+      contacts: {
+        name: '',
+        number: '',
+        message: ''
+      }
+    };
+  },
+  mounted: function mounted() {},
+  methods: {
+    sendSlackNotification: function sendSlackNotification() {
+      var _this = this;
+
+      this.successSend = true;
+      axios({
+        method: 'post',
+        url: '/send_email',
+        data: {
+          contacts: this.contacts
+        }
+      }).then(function (response) {
+        _this.contacts = {
+          name: '',
+          number: '',
+          message: ''
+        };
+        $('#myModal').modal('toggle');
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -2043,10 +2089,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {}
 });
@@ -2153,6 +2195,58 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {}
 });
@@ -2168,9 +2262,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
 //
 //
 //
@@ -2666,6 +2757,63 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {}
 });
@@ -2681,6 +2829,41 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2788,6 +2971,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {}
 });
@@ -2803,6 +2992,46 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38200,50 +38429,161 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "main-vue" }, [
+    _c("section", { staticClass: "section" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "form" }, [
+          _c("div", { staticClass: "col-sm-6 form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.contacts.name,
+                  expression: "contacts.name"
+                }
+              ],
+              attrs: { type: "text", name: "name", placeholder: "Имя" },
+              domProps: { value: _vm.contacts.name },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.contacts, "name", $event.target.value)
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-6 form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.contacts.number,
+                  expression: "contacts.number"
+                }
+              ],
+              attrs: {
+                type: "text",
+                name: "text",
+                placeholder: "Телефон или email"
+              },
+              domProps: { value: _vm.contacts.number },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.contacts, "number", $event.target.value)
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-12 form-group" }, [
+            _c("textarea", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.contacts.message,
+                  expression: "contacts.message"
+                }
+              ],
+              attrs: { rows: "3", name: "message", placeholder: "Сообщение" },
+              domProps: { value: _vm.contacts.message },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.contacts, "message", $event.target.value)
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "text-right" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-orange",
+                attrs: { type: "submit" },
+                on: { click: _vm.sendSlackNotification }
+              },
+              [_vm._v("Связаться со мной")]
+            )
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(0)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "main-vue" }, [
-      _c("section", { staticClass: "section" }, [
-        _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "form" }, [
-            _c("div", { staticClass: "col-sm-6 form-group" }, [
-              _c("input", {
-                attrs: { type: "text", name: "name", placeholder: "Имя" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-sm-6 form-group" }, [
-              _c("input", {
-                attrs: {
-                  type: "text",
-                  name: "text",
-                  placeholder: "Телефон или email"
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-sm-12 form-group" }, [
-              _c("textarea", {
-                attrs: { rows: "3", name: "message", placeholder: "Сообщение" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-right" }, [
-              _c(
-                "button",
-                { staticClass: "btn btn-orange", attrs: { type: "submit" } },
-                [_vm._v("Связаться со мной")]
-              )
+    return _c(
+      "div",
+      {
+        staticClass: "modal",
+        attrs: { tabindex: "-1", role: "dialog", id: "myModal" }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c("h5", { staticClass: "modal-title" }, [
+                  _vm._v("Спасибо, ваша заявка принята!"),
+                  _c("br"),
+                  _vm._v(
+                    "\n                        Мы свяжемся с вами в ближайшее время"
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: {
+                      type: "button",
+                      "data-dismiss": "modal",
+                      "aria-label": "Close"
+                    }
+                  },
+                  [
+                    _c("span", { attrs: { "aria-hidden": "true" } }, [
+                      _vm._v("×")
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary",
+                    staticStyle: { "margin-bottom": "10px" },
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("Закрыть")]
+                )
+              ])
             ])
-          ])
-        ])
-      ])
-    ])
+          ]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -38539,31 +38879,6 @@ var staticRenderFns = [
             _c("span", { staticClass: "icon-bar" })
           ]
         ),
-        _vm._v(" "),
-        _c("ul", { staticClass: "social-list" }, [
-          _c(
-            "a",
-            {
-              attrs: {
-                href: "https://www.instagram.com/lisenok.surgut/?r=nametag",
-                target: "_blank"
-              }
-            },
-            [_c("i", { staticClass: "fa fa-instagram" })]
-          ),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "/#" } }, [
-            _c("i", { staticClass: "fa fa-youtube" })
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              attrs: { href: "https://vk.com/lisenok.surgut", target: "_blank" }
-            },
-            [_c("i", { staticClass: "fa fa-vk" })]
-          )
-        ]),
         _vm._v(" "),
         _c("nav", { staticClass: "nav-mobile" }, [
           _c(
@@ -38876,19 +39191,162 @@ var staticRenderFns = [
                 [
                   _c("h2", { staticClass: "section-title color-orange" }, [
                     _vm._v("Режим дня")
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui itaque dolor, aliquid\n                                reprehenderit ex optio consequatur iusto repellat magni nam similique"
-                    )
                   ])
                 ]
               )
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "top_30" })
+          _c("div", { staticClass: "top_30" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("table", { staticClass: "table daily-regime" }, [
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [
+                      _c(
+                        "h3",
+                        {
+                          staticClass: "color-orange",
+                          staticStyle: { "white-space": "nowrap" }
+                        },
+                        [_vm._v("7:00 - 7:50")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_c("h6", [_vm._v("Приём детей на воздухе")])])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("7:50 - 8:35")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("h6", [_vm._v("Подготовка к завтраку, завтрак")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("8:45 - 9:00")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_c("h6", [_vm._v("Первое занятие, игры")])])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("9:00 - 11:20")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("h6", [_vm._v("Подготовка к прогулке, прогулка")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("11:15 - 11:45")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("h6", [
+                        _vm._v(
+                          "Возвращение с прогулки, самостоятельная деятельность, подготовка к обеду"
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("11:45 - 12:20")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_c("h6", [_vm._v("Обед")])])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("12:20 - 15:00")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_c("h6", [_vm._v("Подготовка ко сну, сон")])])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("15:00 - 15:15")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("h6", [_vm._v("Постепенный подъём, водные процедуры")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("15:15 - 15:30")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_c("h6", [_vm._v("Полдник")])])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("15:30 - 15:45")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("h6", [_vm._v("Самостоятельная деятельность")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("15:45 - 16:00")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_c("h6", [_vm._v("Второе занятие")])])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("16:15 - 19:00")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("h6", [
+                        _vm._v("Подготовка к прогулке, прогулка, уход домой")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
         ])
       ])
     ])
@@ -38950,10 +39408,23 @@ var staticRenderFns = [
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("p", [
+                  _c("p", { staticClass: "text-left" }, [
+                    _vm._v("Каша, овощное блюдо"),
+                    _c("br"),
+                    _vm._v("\n                                Яичное блюдо"),
+                    _c("br"),
+                    _vm._v("\n                                Творожное блюдо"),
+                    _c("br"),
                     _vm._v(
-                      "Каша в ассортименте, сырники со сметаной, запеканка творожная с вареньем или джемом,\n                                блины или оладьи со сметаной, вареньем, сгущенкой, теплый компот/ чай, булочка с\n                                маслом."
-                    )
+                      "\n                                Мясное, рыбное блюдо"
+                    ),
+                    _c("br"),
+                    _vm._v("\n                                Салат овощной"),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                Напиток (какао, чай, молоко и т.п.)"
+                    ),
+                    _c("br")
                   ])
                 ]
               ),
@@ -38981,15 +39452,24 @@ var staticRenderFns = [
                 },
                 [
                   _c("h2", { staticClass: "section-title" }, [
-                    _c("p", { staticClass: "color-orange" }, [
-                      _vm._v(" Второй завтрак")
-                    ])
+                    _c("p", { staticClass: "color-orange" }, [_vm._v(" Обед")])
                   ]),
                   _vm._v(" "),
-                  _c("p", [
+                  _c("p", { staticClass: "text-left" }, [
+                    _vm._v("\n                                Салат, закуска"),
+                    _c("br"),
+                    _vm._v("\n                                Первое блюдо"),
+                    _c("br"),
                     _vm._v(
-                      "Гипоаллергенные фрукты (зеленое яблоко или груши, бананы)"
-                    )
+                      "\n                                Блюдо из мяса, рыбы, птицы"
+                    ),
+                    _c("br"),
+                    _vm._v("\n                                Гарнир"),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                Третье блюдо (напиток)"
+                    ),
+                    _c("br")
                   ])
                 ]
               ),
@@ -38997,7 +39477,7 @@ var staticRenderFns = [
               _c("div", {
                 staticClass: "bg-left-lg-fluid col-lg-6",
                 staticStyle: {
-                  "background-image": "url(img/portfolio/apples.jpg)"
+                  "background-image": "url(img/portfolio/lunch.jpg)"
                 }
               })
             ])
@@ -39014,12 +39494,26 @@ var staticRenderFns = [
                 { staticClass: "col-lg-6 container-left-lg-fluid" },
                 [
                   _c("h2", { staticClass: "section-title" }, [
-                    _c("p", { staticClass: "color-orange" }, [_vm._v(" Обед")])
+                    _c("p", { staticClass: "color-orange" }, [
+                      _vm._v(" Полдник")
+                    ])
                   ]),
                   _vm._v(" "),
-                  _c("p", [
+                  _c("p", { staticClass: "text-left" }, [
+                    _vm._v("\n                                Кефир, молоко"),
+                    _c("br"),
                     _vm._v(
-                      "Суп (борщ, щи, куриный бульон и др.), горячее (жаркое из филе индейки, котлеты в\n                                ассортименте, макароны, запеканка картофельная с мясом и др.), гарнир (пюре, греча,\n                                рис, тушеные овощи и др.), салат (из свежих овощей, свекольный и др.),\n                                компот/чай/морс"
+                      "\n                                Булочка, выпечка (печенье, вафли)"
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                Блюдо из творога, круп, овощей"
+                    ),
+                    _c("br"),
+                    _vm._v("\n                                Свежие фрукты"),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                Хлеб на весь день: пшеничный, ржаной\n                            "
                     )
                   ])
                 ]
@@ -39027,42 +39521,6 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("div", {
                 staticClass: "bg-right-lg-fluid col-lg-6",
-                staticStyle: {
-                  "background-image": "url(img/portfolio/lunch.jpg)"
-                }
-              })
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("section", { staticClass: "section-sm pb-0" }, [
-        _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "header",
-                {
-                  staticClass:
-                    "container-right-lg-fluid col-lg-6 col-lg-offset-6"
-                },
-                [
-                  _c("h2", { staticClass: "section-title" }, [
-                    _c("p", { staticClass: "color-orange" }, [
-                      _vm._v(" Полдник")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "Пудинг, спагетти с сыром, котлеты картофельные со сметаной, шарики рисовые с\n                                вареньем, оладьи со сгущенкой, драники, овсянники со сметаной, блинчики с джемом,\n                                творожки в индивидуальной упаковке, творожное суфле со сгущенным молоком, суфле из\n                                яиц, свекольные котлеты, компот/чай/морс, фрукты "
-                    )
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "bg-left-lg-fluid col-lg-6",
                 staticStyle: {
                   "background-image": "url(img/portfolio/полдник.jpg)"
                 }
@@ -39259,76 +39717,71 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "main",
-      {
-        staticClass: "main main-full main-bg",
-        attrs: { id: "boxercontainer" }
-      },
-      [
-        _c("div", { staticClass: "main-bg-before" }, [
-          _c("div", { staticClass: "container-fluid" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-12" }, [
-                _c("div", { staticClass: "col-md-1 col-sm-6 col-sx-6" }, [
-                  _c("img", {
-                    staticClass: "sun left-animation",
-                    attrs: { src: "images/sun1.png", height: "250px" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-1 col-sm-6 col-sx-6" }, [
-                  _c("img", {
-                    staticClass: "left-animation",
-                    attrs: { src: "images/logo-sites.png", height: "300px" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", {
+    return _c("main", { staticClass: "main main-full main-bg" }, [
+      _c("div", { staticClass: "main-bg-before" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("div", { staticClass: "col-md-1 col-sm-6 col-sx-6" }, [
+                _c("img", {
+                  staticClass: "sun left-animation",
+                  attrs: { src: "images/sun1.png", height: "200px" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-1 col-sm-6 col-sx-6" }, [
+                _c("img", {
+                  staticClass: "left-animation",
+                  attrs: { src: "images/logo-sites.png", height: "300px" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", {
+                staticClass:
+                  "col-md-7 col-sm-6 col-sx-6 hidden-md hidden-sm hidden-xs"
+              }),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
                   staticClass:
-                    "col-md-7 col-sm-6 col-sx-6 hidden-md hidden-sm hidden-xs"
-                }),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "col-md-3 cloud-soc right-animation hidden-md hidden-sm hidden-xs"
-                  },
-                  [
-                    _c("div", { staticClass: "social-cloud " }, [
-                      _c(
-                        "a",
-                        {
-                          attrs: {
-                            href:
-                              "https://www.instagram.com/lisenok.surgut/?r=nametag",
-                            target: "_blank"
-                          }
-                        },
-                        [_c("i", { staticClass: "fa fa-instagram" })]
-                      ),
-                      _vm._v(" "),
-                      _c("a", { attrs: { href: "/#" } }, [
-                        _c("i", { staticClass: "fa fa-youtube" })
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          attrs: {
-                            href: "https://vk.com/lisenok.surgut",
-                            target: "_blank"
-                          }
-                        },
-                        [_c("i", { staticClass: "fa fa-vk" })]
-                      )
-                    ])
-                  ]
-                )
-              ])
-            ]),
-            _vm._v(" "),
+                    "col-md-3 cloud-soc right-animation hidden-md hidden-sm hidden-xs"
+                },
+                [
+                  _c("div", { staticClass: "social-cloud " }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href:
+                            "https://www.instagram.com/lisenok.surgut/?r=nametag",
+                          target: "_blank"
+                        }
+                      },
+                      [_c("i", { staticClass: "fa fa-instagram" })]
+                    ),
+                    _vm._v(" "),
+                    _c("a", { attrs: { href: "/#" } }, [
+                      _c("i", { staticClass: "fa fa-youtube" })
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "https://vk.com/lisenok.surgut",
+                          target: "_blank"
+                        }
+                      },
+                      [_c("i", { staticClass: "fa fa-vk" })]
+                    )
+                  ])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "boxercontainer" } }, [
             _c(
               "div",
               { staticClass: "opener", attrs: { id: "title-general" } },
@@ -39345,12 +39798,12 @@ var staticRenderFns = [
                 ])
               ]
             )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "mouse-helper" })
-        ])
-      ]
-    )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mouse-helper" })
+      ])
+    ])
   },
   function() {
     var _vm = this
@@ -39374,7 +39827,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "about-entry text-center" }, [
                 _c("p", [
                   _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quaerat ipsa\n                                    expedita\n                                    odit rerum quibusdam dolore, autem mollitia non earum neque voluptates\n                                    explicabo."
+                    "Улыбнитесь! Мы любим Вас и Ваших детей! Нам в радость заботиться о Ваших\n                                    детях!"
                   )
                 ])
               ])
@@ -39389,8 +39842,26 @@ var staticRenderFns = [
             _c("a", { attrs: { href: "/our_kindergarten" } }, [
               _c("figure", { staticClass: "showcase-item" }, [
                 _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                  _c("img", { attrs: { alt: "", src: "img/sadik/sadik.jpg" } })
+                ]),
+                _vm._v(" "),
+                _c("figcaption", { staticClass: "showcase-item-hover" }, [
+                  _c("div", { staticClass: "showcase-item-info" }, [
+                    _c("div", { staticClass: "showcase-item-category" }, [
+                      _vm._v("Подробнее")
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
+            _c("a", { attrs: { href: "/our_kindergarten" } }, [
+              _c("figure", { staticClass: "showcase-item" }, [
+                _c("div", { staticClass: "showcase-item-thumbnail" }, [
                   _c("img", {
-                    attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                    attrs: { alt: "", src: "img/sadik/sadik-vnutri.jpg" }
                   })
                 ]),
                 _vm._v(" "),
@@ -39410,7 +39881,7 @@ var staticRenderFns = [
               _c("figure", { staticClass: "showcase-item" }, [
                 _c("div", { staticClass: "showcase-item-thumbnail" }, [
                   _c("img", {
-                    attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                    attrs: { alt: "", src: "img/sadik/DSC_0363.jpg" }
                   })
                 ]),
                 _vm._v(" "),
@@ -39429,9 +39900,25 @@ var staticRenderFns = [
             _c("a", { attrs: { href: "/our_kindergarten" } }, [
               _c("figure", { staticClass: "showcase-item" }, [
                 _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                  _c("img", {
-                    attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
-                  })
+                  _c("img", { attrs: { alt: "", src: "img/sadik/fon.jpg" } })
+                ]),
+                _vm._v(" "),
+                _c("figcaption", { staticClass: "showcase-item-hover" }, [
+                  _c("div", { staticClass: "showcase-item-info" }, [
+                    _c("div", { staticClass: "showcase-item-category" }, [
+                      _vm._v("Подробнее")
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
+            _c("a", { attrs: { href: "/our_kindergarten" } }, [
+              _c("figure", { staticClass: "showcase-item" }, [
+                _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                  _c("img", { attrs: { alt: "", src: "img/sadik/beer.jpg" } })
                 ]),
                 _vm._v(" "),
                 _c("figcaption", { staticClass: "showcase-item-hover" }, [
@@ -39450,47 +39937,7 @@ var staticRenderFns = [
               _c("figure", { staticClass: "showcase-item" }, [
                 _c("div", { staticClass: "showcase-item-thumbnail" }, [
                   _c("img", {
-                    attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("figcaption", { staticClass: "showcase-item-hover" }, [
-                  _c("div", { staticClass: "showcase-item-info" }, [
-                    _c("div", { staticClass: "showcase-item-category" }, [
-                      _vm._v("Подробнее")
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
-            _c("a", { attrs: { href: "/our_kindergarten" } }, [
-              _c("figure", { staticClass: "showcase-item" }, [
-                _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                  _c("img", {
-                    attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("figcaption", { staticClass: "showcase-item-hover" }, [
-                  _c("div", { staticClass: "showcase-item-info" }, [
-                    _c("div", { staticClass: "showcase-item-category" }, [
-                      _vm._v("Подробнее")
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
-            _c("a", { attrs: { href: "/our_kindergarten" } }, [
-              _c("figure", { staticClass: "showcase-item" }, [
-                _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                  _c("img", {
-                    attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                    attrs: { alt: "", src: "img/sadik/krovati.jpg" }
                   })
                 ]),
                 _vm._v(" "),
@@ -39561,12 +40008,6 @@ var staticRenderFns = [
                 [
                   _c("h2", { staticClass: "section-title color-orange" }, [
                     _vm._v("Наш садик")
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui itaque dolor, aliquid\n                                reprehenderit ex optio consequatur iusto repellat magni nam similique"
-                    )
                   ])
                 ]
               )
@@ -39575,11 +40016,11 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "isotope js-gallery top_30" }, [
             _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/portfolio/2/1-637x465.jpg" } }, [
+              _c("a", { attrs: { href: "img/sadik/98p8Dz1GVI0.jpg" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                      attrs: { alt: "", src: "img/sadik/98p8Dz1GVI0.jpg" }
                     })
                   ]),
                   _vm._v(" "),
@@ -39591,11 +40032,11 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/portfolio/2/1-637x465.jpg" } }, [
+              _c("a", { attrs: { href: "img/sadik/gbcw4I_YAxs.jpg" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                      attrs: { alt: "", src: "img/sadik/gbcw4I_YAxs.jpg" }
                     })
                   ]),
                   _vm._v(" "),
@@ -39607,11 +40048,11 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/portfolio/2/1-637x465.jpg" } }, [
+              _c("a", { attrs: { href: "img/sadik/MZ0Sy9W-zOE.jpg" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                      attrs: { alt: "", src: "img/sadik/MZ0Sy9W-zOE.jpg" }
                     })
                   ]),
                   _vm._v(" "),
@@ -39623,11 +40064,11 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/portfolio/2/1-637x465.jpg" } }, [
+              _c("a", { attrs: { href: "img/sadik/eyGixXDdBV4.jpg" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                      attrs: { alt: "", src: "img/sadik/eyGixXDdBV4.jpg" }
                     })
                   ]),
                   _vm._v(" "),
@@ -39639,11 +40080,11 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/portfolio/2/1-637x465.jpg" } }, [
+              _c("a", { attrs: { href: "img/sadik/PXQASPVsOW8.jpg" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                      attrs: { alt: "", src: "img/sadik/PXQASPVsOW8.jpg" }
                     })
                   ]),
                   _vm._v(" "),
@@ -39655,11 +40096,11 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/portfolio/2/1-637x465.jpg" } }, [
+              _c("a", { attrs: { href: "img/sadik/XcTQP8mi_og.jpg" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                      attrs: { alt: "", src: "img/sadik/XcTQP8mi_og.jpg" }
                     })
                   ]),
                   _vm._v(" "),
@@ -39671,11 +40112,11 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/portfolio/2/1-637x465.jpg" } }, [
+              _c("a", { attrs: { href: "img/sadik/tPA1vnivi7s.jpg" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                      attrs: { alt: "", src: "img/sadik/tPA1vnivi7s.jpg" }
                     })
                   ]),
                   _vm._v(" "),
@@ -39687,11 +40128,11 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/portfolio/2/1-637x465.jpg" } }, [
+              _c("a", { attrs: { href: "img/sadik/CqYXCn5DWio.jpg" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                      attrs: { alt: "", src: "img/sadik/CqYXCn5DWio.jpg" }
                     })
                   ]),
                   _vm._v(" "),
@@ -39703,11 +40144,11 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/portfolio/2/1-637x465.jpg" } }, [
+              _c("a", { attrs: { href: "img/sadik/sadik.jpg" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                      attrs: { alt: "", src: "img/sadik/sadik.jpg" }
                     })
                   ]),
                   _vm._v(" "),
@@ -39719,11 +40160,87 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/portfolio/2/1-637x465.jpg" } }, [
+              _c("a", { attrs: { href: "img/sadik/sadik-vnutri.jpg" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/portfolio/2/1-637x465.jpg" }
+                      attrs: { alt: "", src: "img/sadik/sadik-vnutri.jpg" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                    _c("i", { staticClass: "icon-plus" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "isotope-item wedding" }, [
+              _c("a", { attrs: { href: "img/sadik/DSC_0363.jpg" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", {
+                      attrs: { alt: "", src: "img/sadik/DSC_0363.jpg" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                    _c("i", { staticClass: "icon-plus" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "isotope-item wedding" }, [
+              _c("a", { attrs: { href: "img/sadik/fon.jpg" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", { attrs: { alt: "", src: "img/sadik/fon.jpg" } })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                    _c("i", { staticClass: "icon-plus" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "isotope-item wedding" }, [
+              _c("a", { attrs: { href: "img/sadik/beer.jpg" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", { attrs: { alt: "", src: "img/sadik/beer.jpg" } })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                    _c("i", { staticClass: "icon-plus" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "isotope-item wedding" }, [
+              _c("a", { attrs: { href: "img/sadik/krovati.jpg" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", {
+                      attrs: { alt: "", src: "img/sadik/krovati.jpg" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                    _c("i", { staticClass: "icon-plus" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "isotope-item wedding" }, [
+              _c("a", { attrs: { href: "img/sadik/qweasdasd.jpg" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", {
+                      attrs: { alt: "", src: "img/sadik/qweasdasd.jpg" }
                     })
                   ]),
                   _vm._v(" "),
@@ -39797,7 +40314,91 @@ var staticRenderFns = [
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "top_30" })
+          _c("div", { staticClass: "top_30" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "col-md-4" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card card-orange",
+                    staticStyle: { width: "18rem" }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("h6", { staticClass: "card-title color-orange" }, [
+                        _vm._v("Индивидуальные")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text card-price-text" }, [
+                        _vm._v(
+                          "\n                                        от 400 руб/час"
+                        ),
+                        _c("br")
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card card-orange",
+                    staticStyle: { width: "18rem" }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("h6", { staticClass: "card-title color-orange" }, [
+                        _vm._v("Доп."),
+                        _c("br"),
+                        _vm._v(" занятия- групповые")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text card-price-text" }, [
+                        _vm._v(
+                          "\n                                        200 руб/час"
+                        ),
+                        _c("br")
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card card-orange",
+                    staticStyle: { width: "18rem" }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("h6", { staticClass: "card-title color-orange" }, [
+                        _vm._v("Группа дневного пребывани")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text card-price-text" }, [
+                        _vm._v(
+                          "\n                                        10000 руб/месяц"
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                                        600 рублей/день"
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                                        100 рублей/час"
+                        ),
+                        _c("br")
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
         ])
       ])
     ])
@@ -39854,12 +40455,6 @@ var staticRenderFns = [
               [
                 _c("h2", { staticClass: "section-title color-orange" }, [
                   _vm._v("Наши достижения")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui itaque dolor, aliquid\n                            reprehenderit ex optio consequatur iusto repellat magni nam similique"
-                  )
                 ])
               ]
             )
@@ -39877,14 +40472,11 @@ var staticRenderFns = [
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
-                      _vm._v(' "Игра - это здорово"')
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _vm._v('"Социально-ориентированный бизнес"')
                     ])
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      'Диплом за высокий уровень организации детской творческой деятельности в рамках\n                                программы "Разговор о правильном питании", активное участие в региональном этапе\n                                всероссийского конкурса детских творческих работ "Игра - это здорово"'
-                    )
                   ])
                 ]
               ),
@@ -39892,7 +40484,7 @@ var staticRenderFns = [
               _c("div", {
                 staticClass: "bg-right-lg-fluid col-lg-6",
                 staticStyle: {
-                  "background-image": "url(img/portfolio/2-800x600.jpg)"
+                  "background-image": "url(img/progress/social.png)"
                 }
               })
             ])
@@ -39913,23 +40505,50 @@ var staticRenderFns = [
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
-                      _vm._v(' "Игра - это здорово"')
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _vm._v(' "Вклад в будущее"')
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      'Диплом за высокий уровень организации детской творческой деятельности в рамках\n                                программы "Разговор о правильном питании", активное участие в региональном этапе\n                                всероссийского конкурса детских творческих работ "Игра - это здорово"'
-                    )
-                  ])
+                  _c("p")
                 ]
               ),
               _vm._v(" "),
               _c("div", {
                 staticClass: "bg-left-lg-fluid col-lg-6",
                 staticStyle: {
-                  "background-image": "url(img/portfolio/2-800x600.jpg)"
+                  "background-image": "url(img/progress/vklad.png)"
                 }
+              })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "section-sm pb-0" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "section-lg" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "header",
+                { staticClass: "col-lg-6 container-left-lg-fluid" },
+                [
+                  _c("h2", { staticClass: "section-title" }, [
+                    _c("p", { staticClass: "color-orange" }, [
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _vm._v("Все достижения")
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "bg-right-lg-fluid col-lg-6",
+                staticStyle: { "background-image": "url(img/progress/all.png)" }
               })
             ])
           ])
@@ -39990,14 +40609,14 @@ var staticRenderFns = [
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
-                      _vm._v(" Управляющая")
+                      _vm._v(" Заведующая")
                     ]),
-                    _vm._v(" Никольская Диана Рафаилевна")
+                    _vm._v(" Ятленко Ольга Дмитриевна")
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui itaque dolor, aliquid reprehenderit ex optio consequatur iusto repellat magni nam similique ratione vero sed dolorem consectetur accusantium quidem veniam!"
+                      "Образование высшее, логопед-дефектолог, преподаватель немецкого языка"
                     )
                   ])
                 ]
@@ -40006,7 +40625,7 @@ var staticRenderFns = [
               _c("div", {
                 staticClass: "bg-right-lg-fluid col-lg-6",
                 staticStyle: {
-                  "background-image": "url(img/portfolio/1-800x600.jpg)"
+                  "background-image": "url(img/personal/olga.png)"
                 }
               })
             ])
@@ -40027,23 +40646,19 @@ var staticRenderFns = [
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
-                      _vm._v(" Управляющая")
+                      _vm._v("Логопед")
                     ]),
-                    _vm._v(" Никольская Диана Рафаилевна")
+                    _vm._v(" Бачурина Юлия Сергеевна")
                   ]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui itaque dolor, aliquid reprehenderit ex optio consequatur iusto repellat magni nam similique ratione vero sed dolorem consectetur accusantium quidem veniam!"
-                    )
-                  ])
+                  _c("p", [_vm._v("Высшее образование, методист")])
                 ]
               ),
               _vm._v(" "),
               _c("div", {
                 staticClass: "bg-left-lg-fluid col-lg-6",
                 staticStyle: {
-                  "background-image": "url(img/portfolio/2-800x600.jpg)"
+                  "background-image": "url(img/personal/ylia.png)"
                 }
               })
             ])
@@ -40061,14 +40676,14 @@ var staticRenderFns = [
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
-                      _vm._v(" Управляющая")
+                      _vm._v(" Заместитель заведующей")
                     ]),
-                    _vm._v(" Никольская Диана Рафаилевна")
+                    _vm._v(" Диомидова Олеся Валерьевна")
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui itaque dolor, aliquid reprehenderit ex optio consequatur iusto repellat magni nam similique ratione vero sed dolorem consectetur accusantium quidem veniam!"
+                      "Высшее образование, преподаватель английского языка"
                     )
                   ])
                 ]
@@ -40077,7 +40692,107 @@ var staticRenderFns = [
               _c("div", {
                 staticClass: "bg-right-lg-fluid col-lg-6",
                 staticStyle: {
-                  "background-image": "url(img/portfolio/3-800x600.jpg)"
+                  "background-image": "url(img/personal/olesa.png)"
+                }
+              })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "section-sm pb-0" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "section-lg" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "header",
+                {
+                  staticClass:
+                    "container-right-lg-fluid col-lg-6 col-lg-offset-6"
+                },
+                [
+                  _c("h2", { staticClass: "section-title" }, [
+                    _c("p", { staticClass: "color-orange" }, [
+                      _vm._v("Музыкальный руководитель")
+                    ]),
+                    _vm._v(" Земляная Анна Леонидовна")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Высшее образование, хореограф, режиссёр")])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "bg-left-lg-fluid col-lg-6",
+                staticStyle: {
+                  "background-image": "url(img/personal/anna.png)"
+                }
+              })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "section-sm" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "section-lg" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "header",
+                { staticClass: "col-lg-6 container-left-lg-fluid" },
+                [
+                  _c("h2", { staticClass: "section-title" }, [
+                    _c("p", { staticClass: "color-orange" }, [
+                      _vm._v("Преподаватель по адаптивной физкультуре")
+                    ]),
+                    _vm._v(" Круглова Кристина Дмитриевна")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Высшее образование")])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "bg-right-lg-fluid col-lg-6",
+                staticStyle: {
+                  "background-image": "url(img/personal/kristina.png)"
+                }
+              })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "section-sm pb-0" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "section-lg" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "header",
+                {
+                  staticClass:
+                    "container-right-lg-fluid col-lg-6 col-lg-offset-6"
+                },
+                [
+                  _c("h2", { staticClass: "section-title" }, [
+                    _c("p", { staticClass: "color-orange" }, [
+                      _vm._v("Воспитатель")
+                    ]),
+                    _vm._v(" Темирханова Залина Абидовна")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      " Средне-специальное, н/высшее, учитель начальных классов"
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "bg-left-lg-fluid col-lg-6",
+                staticStyle: {
+                  "background-image": "url(img/personal/zalina.png)"
                 }
               })
             ])
@@ -53260,8 +53975,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Ospanel 2\OSPanel\domains\licenok\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Ospanel 2\OSPanel\domains\licenok\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\OSPanel\domains\licenok\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\OSPanel\domains\licenok\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

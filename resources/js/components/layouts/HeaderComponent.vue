@@ -15,11 +15,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <ul class="social-list">
-                <a href="https://www.instagram.com/lisenok.surgut/?r=nametag" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a href="/#"><i class="fa fa-youtube"></i></a>
-                <a href="https://vk.com/lisenok.surgut" target="_blank"><i class="fa fa-vk"></i></a>
-            </ul>
+
 
             <!-- Navigation Mobile -->
 

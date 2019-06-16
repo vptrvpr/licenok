@@ -46,7 +46,7 @@ h2,
 .h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2.4em;
     line-height: 1.2;
     color: #3b3b3b;
     margin: 0.6em 0;
@@ -1135,6 +1135,7 @@ address {
 
 .main h1 {
     color: #fff;
+    font-size: 60px;
 }
 
 main h1 {
@@ -2179,6 +2180,41 @@ main h1 {
     position: relative;
     overflow: visible;
 }
+
+.daily-regime {
+    display: flex;
+    justify-content: center;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+    border-top: 0;
+    padding: 0;
+}
+
+.daily-regime h3{
+    padding: 0 20px 0 20px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.card-orange{
+    border: 2px solid #F26915;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+.card-price-text{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-title{
+    font-size: 18px;
+}
+
 
 
 

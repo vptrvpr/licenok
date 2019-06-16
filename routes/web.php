@@ -26,3 +26,8 @@ Route::get( '/extra_classes', 'PagesController@extraСlasses' )->name( 'extra_cl
 Route::get( '/price', 'PagesController@price' )->name( 'price' );
 Route::get( '/contacts', 'PagesController@contacts' )->name( 'contacts' );
 
+/**
+ * Send
+ */
+Route::post( '/send_email', 'SendController@email' )->name( 'sendEmail' );
+

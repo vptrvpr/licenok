@@ -12,8 +12,6 @@
                     <div class="container-fluid">
                         <header class="text-center col-lg-8 col-lg-offset-2 ">
                             <h2 class="section-title color-orange">Наши достижения</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui itaque dolor, aliquid
-                                reprehenderit ex optio consequatur iusto repellat magni nam similique</p>
                         </header>
                     </div>
                 </div>
@@ -24,13 +22,10 @@
                     <div class="section-lg">
                         <div class="row">
                             <header class="col-lg-6 container-left-lg-fluid">
-                                <h2 class="section-title"><p class="color-orange"> "Игра - это здорово"</p></h2>
-                                <p>Диплом за высокий уровень организации детской творческой деятельности в рамках
-                                    программы "Разговор о правильном питании", активное участие в региональном этапе
-                                    всероссийского конкурса детских творческих работ "Игра - это здорово"</p>
+                                <h2 class="section-title"><p class="color-orange"><br><br><br>"Социально-ориентированный бизнес"</p></h2>
                             </header>
                             <div class="bg-right-lg-fluid col-lg-6"
-                                 style="background-image:url(img/portfolio/2-800x600.jpg);"></div>
+                                 style="background-image:url(img/progress/social.png);"></div>
                         </div>
                     </div>
                 </div>
@@ -40,13 +35,24 @@
                     <div class="section-lg">
                         <div class="row">
                             <header class="container-right-lg-fluid col-lg-6 col-lg-offset-6">
-                                <h2 class="section-title"><p class="color-orange"> "Игра - это здорово"</p></h2>
-                                <p>Диплом за высокий уровень организации детской творческой деятельности в рамках
-                                    программы "Разговор о правильном питании", активное участие в региональном этапе
-                                    всероссийского конкурса детских творческих работ "Игра - это здорово"</p>
+                                <h2 class="section-title"><p class="color-orange"><br><br><br> "Вклад в будущее"</p></h2>
+                                <p></p>
                             </header>
                             <div class="bg-left-lg-fluid col-lg-6"
-                                 style="background-image:url(img/portfolio/2-800x600.jpg);"></div>
+                                 style="background-image:url(img/progress/vklad.png);"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-sm pb-0">
+                <div class="container-fluid">
+                    <div class="section-lg">
+                        <div class="row">
+                            <header class="col-lg-6 container-left-lg-fluid">
+                                <h2 class="section-title"><p class="color-orange"><br><br><br>Все достижения</p></h2>
+                            </header>
+                            <div class="bg-right-lg-fluid col-lg-6"
+                                 style="background-image:url(img/progress/all.png);"></div>
                         </div>
                     </div>
                 </div>

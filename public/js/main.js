@@ -1,11 +1,5 @@
 $( document ).ready( function () {
-    var dealySet = 1;
-    setInterval( function () {
-        dealySet += 1.25;
-        $( '.main-bg-before' ).css( {
-            backgroundPositionX: '-' + dealySet + 'px'
-        } );
-    }, 100 );
+
 
 
     setTimeout( function () {
@@ -109,6 +103,14 @@ $( document ).ready( function () {
                 }
             } )
         }
+
+        var dealySet = 1;
+        setInterval( function () {
+            dealySet += 1.25;
+            $( '.main-bg-before' ).css( {
+                backgroundPositionX: '-' + dealySet + 'px'
+            } );
+        }, 100 );
 
     }, 1600 );
 

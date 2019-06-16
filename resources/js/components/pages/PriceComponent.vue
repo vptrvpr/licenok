@@ -14,6 +14,41 @@
                         </div>
                     </div>
                     <div class="top_30">
+                        <div class="container">
+                            <div class="col-md-4">
+                                <div class="card card-orange" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title color-orange">Индивидуальные</h6>
+                                        <p class="card-text card-price-text">
+                                            от 400 руб/час<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-orange" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title color-orange">Доп.<br> занятия- групповые</h6>
+                                        <p class="card-text card-price-text">
+                                            200 руб/час<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-orange" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title color-orange">Группа дневного пребывани</h6>
+                                        <p class="card-text card-price-text">
+                                            10000 руб/месяц<br>
+                                            600 рублей/день<br>
+                                            100 рублей/час<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
 
 
                     </div>

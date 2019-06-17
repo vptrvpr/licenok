@@ -18,7 +18,7 @@
                         <div class="row row-base">
                             <div class="col-md-4 col-base address-item address-fl-item">
                                 <i class="icon icon-telephone color-orange"></i>
-                                <div class="address-title">+8 800 555 35 35</div>
+                                <div class="address-title">8 (3462) 31-29-30</div>
                             </div>
                             <div class="col-md-4 col-base address-item address-fl-item">
                                 <i class="icon icon-envelope color-orange"></i>

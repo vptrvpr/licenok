@@ -39168,7 +39168,7 @@ var staticRenderFns = [
                   _c("i", { staticClass: "icon icon-telephone color-orange" }),
                   _vm._v(" "),
                   _c("div", { staticClass: "address-title" }, [
-                    _vm._v("+8 800 555 35 35")
+                    _vm._v("8 (3462) 31-29-30")
                   ])
                 ]
               ),

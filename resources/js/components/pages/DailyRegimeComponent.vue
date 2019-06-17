@@ -9,7 +9,7 @@
                     <div class="row">
                         <div class="container-fluid">
                             <header class="text-center col-lg-8 col-lg-offset-2 ">
-                                <h2 class="section-title color-orange">Режим дня</h2>
+                                <h2 class="section-title color-orange top-animation">Режим дня</h2>
                             </header>
                         </div>
                     </div>

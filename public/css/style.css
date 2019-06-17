@@ -216,10 +216,7 @@ textarea {
     height: 2.5em;
     -webkit-box-shadow: none;
     box-shadow: none;
-    -webkit-appearance: none;
-    -webkit-transition: all .15s;
-    -o-transition: all .15s;
-    transition: all .15s;
+    transition: all .9s;
 }
 
 textarea {
@@ -942,7 +939,7 @@ header p:last-child {
     z-index: 5;
     top: 0;
     background-color: #ffffff;
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .navbar.affix .nav-desctop-list li a,
@@ -1967,7 +1964,7 @@ main h1 {
     .section,
     .section-lg {
         position: relative;
-        padding-top: 7.1em;
+        padding-top: 4.1em;
         padding-bottom: 7.1em;
     }
 
@@ -2131,6 +2128,12 @@ main h1 {
     transition: ease 1s;
 }
 
+.top-animation {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: ease 1s;
+}
+
 .bottom-animation-title {
     transform: translateY(50px);
     opacity: 0;
@@ -2139,6 +2142,18 @@ main h1 {
 
 .left-animation {
     transform: translateX(-50px);
+    opacity: 0;
+    transition: ease 1s;
+}
+
+.left {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: ease 1s;
+}
+
+.right {
+    transform: translateX(50px);
     opacity: 0;
     transition: ease 1s;
 }
@@ -2186,18 +2201,18 @@ main h1 {
     justify-content: center;
 }
 
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     border-top: 0;
     padding: 0;
 }
 
-.daily-regime h3{
+.daily-regime h3 {
     padding: 0 20px 0 20px;
     white-space: nowrap;
     text-align: left;
 }
 
-.card-orange{
+.card-orange {
     border: 2px solid #F26915;
     padding-left: 20px;
     padding-right: 20px;
@@ -2205,15 +2220,70 @@ main h1 {
     border-radius: 15px;
 }
 
-.card-price-text{
+.card-price-text {
     color: black;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500;
 }
 
-.card-title{
+.card-title {
     font-size: 18px;
 }
+
+
+/**
+Scroll animation
+ */
+.showcase-item {
+    opacity: 0;
+    transform: translateY(-80px);
+    transition: all ease 1s;
+}
+
+
+.nav-left-list a {
+    font-size: 14px;
+}
+
+.daily-regime tr {
+    opacity: 0;
+    transform: rotateZ(-15deg) translateX(70px);
+    transition: all ease 1s;
+}
+
+.card {
+    margin-top: 60px;
+}
+
+.left-contact {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all ease 1s;
+}
+
+.right-contact {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all ease 1s;
+}
+
+.top-contact {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all ease 1s;
+}
+
+.button-contact{
+    opacity: 0;
+    transition: all ease 1.7s;
+}
+
+.textarea{
+    transition: all ease 1s;
+}
+
+
+
 
 
 

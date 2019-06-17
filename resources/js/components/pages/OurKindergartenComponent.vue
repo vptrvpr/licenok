@@ -9,11 +9,11 @@
                     <div class="row">
                         <div class="container-fluid">
                             <header class="text-center col-lg-8 col-lg-offset-2 ">
-                                <h2 class="section-title color-orange">Наш садик</h2>
+                                <h2 class="section-title color-orange top-animation">Наш садик</h2>
                             </header>
                         </div>
                     </div>
-                    <div class="isotope js-gallery top_30">
+                    <div class="isotope js-gallery top_30" id="indexAnimationPhotos">
                         <div class="isotope-item wedding">
                             <a href="img/sadik/98p8Dz1GVI0.jpg" >
                                 <figure class="showcase-item">

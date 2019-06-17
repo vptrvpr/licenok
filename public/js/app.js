@@ -1831,6 +1831,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2417,6 +2425,55 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {}
 });
@@ -2909,8 +2966,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -38431,94 +38486,107 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "main-vue" }, [
     _c("section", { staticClass: "section" }, [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "form" }, [
-          _c("div", { staticClass: "col-sm-6 form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.contacts.name,
-                  expression: "contacts.name"
-                }
-              ],
-              attrs: { type: "text", name: "name", placeholder: "Имя" },
-              domProps: { value: _vm.contacts.name },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
+      _c(
+        "div",
+        { staticClass: "container-fluid", attrs: { id: "contactsAnimation" } },
+        [
+          _c("div", { staticClass: "form" }, [
+            _c("div", { staticClass: "col-sm-6 form-group " }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.contacts.name,
+                    expression: "contacts.name"
                   }
-                  _vm.$set(_vm.contacts, "name", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-sm-6 form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.contacts.number,
-                  expression: "contacts.number"
-                }
-              ],
-              attrs: {
-                type: "text",
-                name: "text",
-                placeholder: "Телефон или email"
-              },
-              domProps: { value: _vm.contacts.number },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
+                ],
+                staticClass: "left-contact",
+                attrs: { type: "text", name: "name", placeholder: "Имя" },
+                domProps: { value: _vm.contacts.name },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.contacts, "name", $event.target.value)
                   }
-                  _vm.$set(_vm.contacts, "number", $event.target.value)
                 }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-sm-12 form-group" }, [
-            _c("textarea", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.contacts.message,
-                  expression: "contacts.message"
-                }
-              ],
-              attrs: { rows: "3", name: "message", placeholder: "Сообщение" },
-              domProps: { value: _vm.contacts.message },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 form-group " }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.contacts.number,
+                    expression: "contacts.number"
                   }
-                  _vm.$set(_vm.contacts, "message", $event.target.value)
+                ],
+                staticClass: "right-contact",
+                attrs: {
+                  type: "text",
+                  name: "text",
+                  placeholder: "Телефон или email"
+                },
+                domProps: { value: _vm.contacts.number },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.contacts, "number", $event.target.value)
+                  }
                 }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "text-right" }, [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-orange",
-                attrs: { type: "submit" },
-                on: { click: _vm.sendSlackNotification }
-              },
-              [_vm._v("Связаться со мной")]
-            )
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-12 form-group" }, [
+              _c("textarea", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.contacts.message,
+                    expression: "contacts.message"
+                  }
+                ],
+                staticClass: "top-contact",
+                attrs: { rows: "3", name: "message", placeholder: "Сообщение" },
+                domProps: { value: _vm.contacts.message },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.contacts, "message", $event.target.value)
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "text-right" }, [
+              _c("span", { staticClass: "button-contact" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-orange",
+                    attrs: { type: "submit" },
+                    on: { click: _vm.sendSlackNotification }
+                  },
+                  [
+                    _vm._v(
+                      "Связаться со\n                            мной\n                        "
+                    )
+                  ]
+                )
+              ])
+            ])
           ])
-        ])
-      ])
+        ]
+      )
     ]),
     _vm._v(" "),
     _vm._m(0)
@@ -38542,7 +38610,7 @@ var staticRenderFns = [
           [
             _c("div", { staticClass: "modal-content" }, [
               _c("div", { staticClass: "modal-header" }, [
-                _c("h5", { staticClass: "modal-title" }, [
+                _c("h6", { staticClass: "modal-title" }, [
                   _vm._v("Спасибо, ваша заявка принята!"),
                   _c("br"),
                   _vm._v(
@@ -38573,10 +38641,10 @@ var staticRenderFns = [
                   "button",
                   {
                     staticClass: "btn btn-secondary",
-                    staticStyle: { "margin-bottom": "10px" },
+                    staticStyle: { "margin-bottom": "40px" },
                     attrs: { type: "button", "data-dismiss": "modal" }
                   },
-                  [_vm._v("Закрыть")]
+                  [_vm._v("Закрыть\n                    ")]
                 )
               ])
             ])
@@ -38653,7 +38721,7 @@ var staticRenderFns = [
                       staticClass: "phone",
                       attrs: { href: "tel:830022233344" }
                     },
-                    [_vm._v("+8 300 222 333 44")]
+                    [_vm._v("8 (3462) 31-29-30")]
                   )
                 ]),
                 _vm._v(" "),
@@ -39004,7 +39072,7 @@ var staticRenderFns = [
                 staticClass: "bottom-animation",
                 attrs: { href: "tel:+88005553535" }
               },
-              [_vm._v("+8 800 555 35 35")]
+              [_vm._v("8 (3462) 31-29-30")]
             )
           ]),
           _vm._v(" "),
@@ -39189,9 +39257,11 @@ var staticRenderFns = [
                 "header",
                 { staticClass: "text-center col-lg-8 col-lg-offset-2 " },
                 [
-                  _c("h2", { staticClass: "section-title color-orange" }, [
-                    _vm._v("Режим дня")
-                  ])
+                  _c(
+                    "h2",
+                    { staticClass: "section-title color-orange top-animation" },
+                    [_vm._v("Режим дня")]
+                  )
                 ]
               )
             ])
@@ -39396,11 +39466,11 @@ var staticRenderFns = [
     return _c("div", { staticClass: "content navbar-sm-space" }, [
       _c("section", { staticClass: "section-sm pb-0" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
-                { staticClass: "col-lg-6 container-left-lg-fluid" },
+                { staticClass: "col-lg-6 container-left-lg-fluid left" },
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
@@ -39430,7 +39500,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-right-lg-fluid col-lg-6",
+                staticClass: "bg-right-lg-fluid col-lg-6 right",
                 staticStyle: {
                   "background-image": "url(img/portfolio/Завтрак.jpg)"
                 }
@@ -39442,13 +39512,13 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("section", { staticClass: "section-sm pb-0" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right " }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
                 {
                   staticClass:
-                    "container-right-lg-fluid col-lg-6 col-lg-offset-6"
+                    "container-right-lg-fluid col-lg-6 col-lg-offset-6 right"
                 },
                 [
                   _c("h2", { staticClass: "section-title" }, [
@@ -39475,7 +39545,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-left-lg-fluid col-lg-6",
+                staticClass: "bg-left-lg-fluid col-lg-6 left",
                 staticStyle: {
                   "background-image": "url(img/portfolio/lunch.jpg)"
                 }
@@ -39487,11 +39557,11 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("section", { staticClass: "section-sm pb-0" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right " }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
-                { staticClass: "col-lg-6 container-left-lg-fluid" },
+                { staticClass: "col-lg-6 container-left-lg-fluid left" },
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
@@ -39520,7 +39590,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-right-lg-fluid col-lg-6",
+                staticClass: "bg-right-lg-fluid col-lg-6 right",
                 staticStyle: {
                   "background-image": "url(img/portfolio/полдник.jpg)"
                 }
@@ -39581,87 +39651,342 @@ var staticRenderFns = [
               "header",
               { staticClass: "text-center col-lg-8 col-lg-offset-2 " },
               [
-                _c("h2", { staticClass: "section-title color-orange" }, [
-                  _vm._v("Дополнительные занятия")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui itaque dolor, aliquid\n                            reprehenderit ex optio consequatur iusto repellat magni nam similique"
-                  )
-                ])
+                _c(
+                  "h2",
+                  { staticClass: "section-title color-orange top-animation" },
+                  [_vm._v("Дополнительные занятия")]
+                )
               ]
             )
           ])
         ])
       ]),
       _vm._v(" "),
-      _c("section", { staticClass: "section-sm pb-0" }, [
-        _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
-            _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        {
+          staticClass: "container top_30",
+          attrs: { id: "indexAnimationPhotos" }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "col-md-4 showcase-item",
+              staticStyle: { "padding-top": "60px" }
+            },
+            [
               _c(
-                "header",
-                { staticClass: "col-lg-6 container-left-lg-fluid" },
-                [
-                  _c("h2", { staticClass: "section-title color-orange" }, [
-                    _vm._v("Логопед")
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui itaque dolor, aliquid\n                                reprehenderit ex optio consequatur iusto repellat magni nam similique"
-                    )
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "bg-right-lg-fluid col-lg-6",
-                staticStyle: {
-                  "background-image": "url(img/portfolio/2-800x600.jpg)"
-                }
-              })
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("section", { staticClass: "section-sm pb-0" }, [
-        _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "header",
+                "div",
                 {
-                  staticClass:
-                    "container-right-lg-fluid col-lg-6 col-lg-offset-6"
+                  staticClass: "card card-orange",
+                  staticStyle: {
+                    width: "18rem",
+                    height: "9rem",
+                    display: "table-cell",
+                    "vertical-align": "middle"
+                  }
                 },
                 [
-                  _c("h2", { staticClass: "section-title" }, [
-                    _c("p", { staticClass: "color-orange" }, [
-                      _vm._v("Курсы английского для детей")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui itaque dolor, aliquid\n                                reprehenderit ex optio consequatur iusto repellat magni nam similique"
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card-body",
+                      staticStyle: { "vertical-align": "center" }
+                    },
+                    [
+                      _c(
+                        "h6",
+                        { staticClass: "card-title color-orange text-center" },
+                        [_vm._v("Хореография, пение")]
+                      )
+                    ]
+                  )
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-4 showcase-item",
+              staticStyle: { "padding-top": "60px" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card card-orange",
+                  staticStyle: {
+                    width: "18rem",
+                    height: "9rem",
+                    display: "table-cell",
+                    "vertical-align": "middle"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "h6",
+                      { staticClass: "card-title color-orange text-center" },
+                      [_vm._v("Английский, немецкий")]
                     )
                   ])
                 ]
-              ),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "bg-left-lg-fluid col-lg-6",
-                staticStyle: {
-                  "background-image": "url(img/portfolio/2-800x600.jpg)"
-                }
-              })
-            ])
-          ])
-        ])
-      ])
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-4 showcase-item",
+              staticStyle: { "padding-top": "60px" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card card-orange",
+                  staticStyle: {
+                    width: "18rem",
+                    height: "9rem",
+                    display: "table-cell",
+                    "vertical-align": "middle"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "h6",
+                      { staticClass: "card-title color-orange text-center" },
+                      [_vm._v("Творческая мастерская")]
+                    )
+                  ])
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-4 showcase-item",
+              staticStyle: { "padding-top": "60px" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card card-orange",
+                  staticStyle: {
+                    width: "18rem",
+                    height: "9rem",
+                    display: "table-cell",
+                    "vertical-align": "middle"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "h6",
+                      { staticClass: "card-title color-orange text-center" },
+                      [_vm._v("Театральная студия")]
+                    )
+                  ])
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-4 showcase-item",
+              staticStyle: { "padding-top": "60px" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card card-orange",
+                  staticStyle: {
+                    width: "18rem",
+                    height: "9rem",
+                    display: "table-cell",
+                    "vertical-align": "middle"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "h6",
+                      { staticClass: "card-title color-orange text-center" },
+                      [_vm._v("Оздоровительная физкультура")]
+                    )
+                  ])
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-4 showcase-item",
+              staticStyle: { "padding-top": "60px" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card card-orange",
+                  staticStyle: {
+                    width: "18rem",
+                    height: "9rem",
+                    display: "table-cell",
+                    "vertical-align": "middle"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "h6",
+                      { staticClass: "card-title color-orange text-center" },
+                      [_vm._v("Фитнес и йога для малышей и мам")]
+                    )
+                  ])
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-4 showcase-item",
+              staticStyle: { "padding-top": "60px" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card card-orange",
+                  staticStyle: {
+                    width: "18rem",
+                    height: "9rem",
+                    display: "table-cell",
+                    "vertical-align": "middle"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "h6",
+                      { staticClass: "card-title color-orange text-center" },
+                      [_vm._v("Логопед-психолог")]
+                    )
+                  ])
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-4 showcase-item",
+              staticStyle: { "padding-top": "60px" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card card-orange",
+                  staticStyle: {
+                    width: "18rem",
+                    height: "9rem",
+                    display: "table-cell",
+                    "vertical-align": "middle"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "h6",
+                      { staticClass: "card-title color-orange text-center" },
+                      [_vm._v("Подготовка к школе")]
+                    )
+                  ])
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-4 showcase-item",
+              staticStyle: { "padding-top": "60px" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card card-orange",
+                  staticStyle: {
+                    width: "18rem",
+                    height: "9rem",
+                    display: "table-cell",
+                    "vertical-align": "middle"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "h6",
+                      { staticClass: "card-title color-orange text-center" },
+                      [_vm._v("Игровая комната")]
+                    )
+                  ])
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-4 showcase-item",
+              staticStyle: { "padding-top": "60px" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card card-orange",
+                  staticStyle: {
+                    width: "18rem",
+                    height: "9rem",
+                    display: "table-cell",
+                    "vertical-align": "middle"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "h6",
+                      { staticClass: "card-title color-orange text-center" },
+                      [_vm._v("Проведение детских праздников")]
+                    )
+                  ])
+                ]
+              )
+            ]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -39837,121 +40162,127 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "portfolio-container" }, [
-        _c("div", { staticClass: "clearfix" }, [
-          _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
-            _c("a", { attrs: { href: "/our_kindergarten" } }, [
-              _c("figure", { staticClass: "showcase-item" }, [
-                _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                  _c("img", { attrs: { alt: "", src: "img/sadik/sadik.jpg" } })
-                ]),
-                _vm._v(" "),
-                _c("figcaption", { staticClass: "showcase-item-hover" }, [
-                  _c("div", { staticClass: "showcase-item-info" }, [
-                    _c("div", { staticClass: "showcase-item-category" }, [
-                      _vm._v("Подробнее")
+        _c(
+          "div",
+          { staticClass: "clearfix", attrs: { id: "indexAnimationPhotos" } },
+          [
+            _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
+              _c("a", { attrs: { href: "/our_kindergarten" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", {
+                      attrs: { alt: "", src: "img/sadik/sadik.jpg" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover" }, [
+                    _c("div", { staticClass: "showcase-item-info" }, [
+                      _c("div", { staticClass: "showcase-item-category" }, [
+                        _vm._v("Подробнее")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
+              _c("a", { attrs: { href: "/our_kindergarten" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", {
+                      attrs: { alt: "", src: "img/sadik/sadik-vnutri.jpg" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover" }, [
+                    _c("div", { staticClass: "showcase-item-info" }, [
+                      _c("div", { staticClass: "showcase-item-category" }, [
+                        _vm._v("Подробнее")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
+              _c("a", { attrs: { href: "/our_kindergarten" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", {
+                      attrs: { alt: "", src: "img/sadik/asdasdasd.png" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover" }, [
+                    _c("div", { staticClass: "showcase-item-info" }, [
+                      _c("div", { staticClass: "showcase-item-category" }, [
+                        _vm._v("Подробнее")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
+              _c("a", { attrs: { href: "/our_kindergarten" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", { attrs: { alt: "", src: "img/sadik/fon.jpg" } })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover" }, [
+                    _c("div", { staticClass: "showcase-item-info" }, [
+                      _c("div", { staticClass: "showcase-item-category" }, [
+                        _vm._v("Подробнее")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
+              _c("a", { attrs: { href: "/our_kindergarten" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", { attrs: { alt: "", src: "img/sadik/beer.jpg" } })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover" }, [
+                    _c("div", { staticClass: "showcase-item-info" }, [
+                      _c("div", { staticClass: "showcase-item-category" }, [
+                        _vm._v("Подробнее")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
+              _c("a", { attrs: { href: "/our_kindergarten" } }, [
+                _c("figure", { staticClass: "showcase-item" }, [
+                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                    _c("img", {
+                      attrs: { alt: "", src: "img/sadik/krovati.jpg" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("figcaption", { staticClass: "showcase-item-hover" }, [
+                    _c("div", { staticClass: "showcase-item-info" }, [
+                      _c("div", { staticClass: "showcase-item-category" }, [
+                        _vm._v("Подробнее")
+                      ])
                     ])
                   ])
                 ])
               ])
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
-            _c("a", { attrs: { href: "/our_kindergarten" } }, [
-              _c("figure", { staticClass: "showcase-item" }, [
-                _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                  _c("img", {
-                    attrs: { alt: "", src: "img/sadik/sadik-vnutri.jpg" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("figcaption", { staticClass: "showcase-item-hover" }, [
-                  _c("div", { staticClass: "showcase-item-info" }, [
-                    _c("div", { staticClass: "showcase-item-category" }, [
-                      _vm._v("Подробнее")
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
-            _c("a", { attrs: { href: "/our_kindergarten" } }, [
-              _c("figure", { staticClass: "showcase-item" }, [
-                _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                  _c("img", {
-                    attrs: { alt: "", src: "img/sadik/asdasdasd.png" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("figcaption", { staticClass: "showcase-item-hover" }, [
-                  _c("div", { staticClass: "showcase-item-info" }, [
-                    _c("div", { staticClass: "showcase-item-category" }, [
-                      _vm._v("Подробнее")
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
-            _c("a", { attrs: { href: "/our_kindergarten" } }, [
-              _c("figure", { staticClass: "showcase-item" }, [
-                _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                  _c("img", { attrs: { alt: "", src: "img/sadik/fon.jpg" } })
-                ]),
-                _vm._v(" "),
-                _c("figcaption", { staticClass: "showcase-item-hover" }, [
-                  _c("div", { staticClass: "showcase-item-info" }, [
-                    _c("div", { staticClass: "showcase-item-category" }, [
-                      _vm._v("Подробнее")
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
-            _c("a", { attrs: { href: "/our_kindergarten" } }, [
-              _c("figure", { staticClass: "showcase-item" }, [
-                _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                  _c("img", { attrs: { alt: "", src: "img/sadik/beer.jpg" } })
-                ]),
-                _vm._v(" "),
-                _c("figcaption", { staticClass: "showcase-item-hover" }, [
-                  _c("div", { staticClass: "showcase-item-info" }, [
-                    _c("div", { staticClass: "showcase-item-category" }, [
-                      _vm._v("Подробнее")
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-portfolio col-sm-6 col-lg-4" }, [
-            _c("a", { attrs: { href: "/our_kindergarten" } }, [
-              _c("figure", { staticClass: "showcase-item" }, [
-                _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                  _c("img", {
-                    attrs: { alt: "", src: "img/sadik/krovati.jpg" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("figcaption", { staticClass: "showcase-item-hover" }, [
-                  _c("div", { staticClass: "showcase-item-info" }, [
-                    _c("div", { staticClass: "showcase-item-category" }, [
-                      _vm._v("Подробнее")
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
+          ]
+        )
       ])
     ])
   }
@@ -40006,251 +40337,264 @@ var staticRenderFns = [
                 "header",
                 { staticClass: "text-center col-lg-8 col-lg-offset-2 " },
                 [
-                  _c("h2", { staticClass: "section-title color-orange" }, [
-                    _vm._v("Наш садик")
-                  ])
+                  _c(
+                    "h2",
+                    { staticClass: "section-title color-orange top-animation" },
+                    [_vm._v("Наш садик")]
+                  )
                 ]
               )
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "isotope js-gallery top_30" }, [
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/98p8Dz1GVI0.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/98p8Dz1GVI0.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
+          _c(
+            "div",
+            {
+              staticClass: "isotope js-gallery top_30",
+              attrs: { id: "indexAnimationPhotos" }
+            },
+            [
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/98p8Dz1GVI0.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/98p8Dz1GVI0.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/gbcw4I_YAxs.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/gbcw4I_YAxs.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/MZ0Sy9W-zOE.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/MZ0Sy9W-zOE.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/eyGixXDdBV4.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/eyGixXDdBV4.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/PXQASPVsOW8.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/PXQASPVsOW8.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/XcTQP8mi_og.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/XcTQP8mi_og.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/tPA1vnivi7s.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/tPA1vnivi7s.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/CqYXCn5DWio.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/CqYXCn5DWio.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/sadik.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/sadik.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/sadik-vnutri.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/sadik-vnutri.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/DSC_0363.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/asdasdasd.png" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/fon.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/fon.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/beer.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/beer.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/krovati.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/krovati.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/qweasdasd.jpg" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", {
+                        attrs: { alt: "", src: "img/sadik/qweasdasd.jpg" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
                   ])
                 ])
               ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/gbcw4I_YAxs.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/gbcw4I_YAxs.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/MZ0Sy9W-zOE.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/MZ0Sy9W-zOE.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/eyGixXDdBV4.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/eyGixXDdBV4.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/PXQASPVsOW8.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/PXQASPVsOW8.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/XcTQP8mi_og.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/XcTQP8mi_og.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/tPA1vnivi7s.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/tPA1vnivi7s.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/CqYXCn5DWio.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/CqYXCn5DWio.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/sadik.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/sadik.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/sadik-vnutri.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/sadik-vnutri.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/DSC_0363.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/asdasdasd.png" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/fon.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", { attrs: { alt: "", src: "img/sadik/fon.jpg" } })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/beer.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", { attrs: { alt: "", src: "img/sadik/beer.jpg" } })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/krovati.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/krovati.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "isotope-item wedding" }, [
-              _c("a", { attrs: { href: "img/sadik/qweasdasd.jpg" } }, [
-                _c("figure", { staticClass: "showcase-item" }, [
-                  _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/qweasdasd.jpg" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                    _c("i", { staticClass: "icon-plus" })
-                  ])
-                ])
-              ])
-            ])
-          ])
+            ]
+          )
         ])
       ])
     ])
@@ -40306,98 +40650,139 @@ var staticRenderFns = [
                 "header",
                 { staticClass: "text-center col-lg-8 col-lg-offset-2 " },
                 [
-                  _c("h2", { staticClass: "section-title color-orange" }, [
-                    _vm._v("Стоимость")
-                  ])
+                  _c(
+                    "h2",
+                    { staticClass: "section-title color-orange top-animation" },
+                    [_vm._v("Стоимость")]
+                  )
                 ]
               )
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "top_30" }, [
-            _c("div", { staticClass: "container" }, [
-              _c("div", { staticClass: "col-md-4" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "card card-orange",
-                    staticStyle: { width: "18rem" }
-                  },
-                  [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("h6", { staticClass: "card-title color-orange" }, [
-                        _vm._v("Индивидуальные")
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "card-text card-price-text" }, [
-                        _vm._v(
-                          "\n                                        от 400 руб/час"
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                attrs: { id: "indexAnimationPhotos" }
+              },
+              [
+                _c("div", { staticClass: "col-md-4 showcase-item" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card card-orange",
+                      staticStyle: { width: "18rem" }
+                    },
+                    [
+                      _c("div", { staticClass: "card-body" }, [
+                        _c(
+                          "h6",
+                          {
+                            staticClass: "card-title color-orange text-center"
+                          },
+                          [_vm._v("Индивидуальные")]
                         ),
-                        _c("br")
+                        _vm._v(" "),
+                        _c(
+                          "p",
+                          {
+                            staticClass: "card-text card-price-text text-center"
+                          },
+                          [
+                            _vm._v(
+                              "\n                                        от 400 руб/час"
+                            ),
+                            _c("br")
+                          ]
+                        )
                       ])
-                    ])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-4" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "card card-orange",
-                    staticStyle: { width: "18rem" }
-                  },
-                  [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("h6", { staticClass: "card-title color-orange" }, [
-                        _vm._v("Доп."),
-                        _c("br"),
-                        _vm._v(" занятия- групповые")
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "card-text card-price-text" }, [
-                        _vm._v(
-                          "\n                                        200 руб/час"
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-4 showcase-item" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card card-orange",
+                      staticStyle: { width: "18rem" }
+                    },
+                    [
+                      _c("div", { staticClass: "card-body" }, [
+                        _c(
+                          "h6",
+                          {
+                            staticClass: "card-title color-orange text-center"
+                          },
+                          [
+                            _vm._v("Доп."),
+                            _c("br"),
+                            _vm._v(" занятия- групповые")
+                          ]
                         ),
-                        _c("br")
+                        _vm._v(" "),
+                        _c(
+                          "p",
+                          {
+                            staticClass: "card-text card-price-text text-center"
+                          },
+                          [
+                            _vm._v(
+                              "\n                                        200 руб/час"
+                            ),
+                            _c("br")
+                          ]
+                        )
                       ])
-                    ])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-4" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "card card-orange",
-                    staticStyle: { width: "18rem" }
-                  },
-                  [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("h6", { staticClass: "card-title color-orange" }, [
-                        _vm._v("Группа дневного пребывани")
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "card-text card-price-text" }, [
-                        _vm._v(
-                          "\n                                        10000 руб/месяц"
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-4 showcase-item" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card card-orange",
+                      staticStyle: { width: "18rem" }
+                    },
+                    [
+                      _c("div", { staticClass: "card-body" }, [
+                        _c(
+                          "h6",
+                          {
+                            staticClass: "card-title color-orange text-center"
+                          },
+                          [_vm._v("Группа дневного пребывани")]
                         ),
-                        _c("br"),
-                        _vm._v(
-                          "\n                                        600 рублей/день"
-                        ),
-                        _c("br"),
-                        _vm._v(
-                          "\n                                        100 рублей/час"
-                        ),
-                        _c("br")
+                        _vm._v(" "),
+                        _c(
+                          "p",
+                          {
+                            staticClass: "card-text card-price-text text-center"
+                          },
+                          [
+                            _vm._v(
+                              "\n                                        10000 руб/месяц"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        600 рублей/день"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        100 рублей/час"
+                            ),
+                            _c("br")
+                          ]
+                        )
                       ])
-                    ])
-                  ]
-                )
-              ])
-            ])
+                    ]
+                  )
+                ])
+              ]
+            )
           ])
         ])
       ])
@@ -40453,9 +40838,11 @@ var staticRenderFns = [
               "header",
               { staticClass: "text-center col-lg-8 col-lg-offset-2 " },
               [
-                _c("h2", { staticClass: "section-title color-orange" }, [
-                  _vm._v("Наши достижения")
-                ])
+                _c(
+                  "h2",
+                  { staticClass: "section-title color-orange top-animation" },
+                  [_vm._v("Наши достижения")]
+                )
               ]
             )
           ])
@@ -40464,15 +40851,14 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("section", { staticClass: "section-sm pb-0" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
-                { staticClass: "col-lg-6 container-left-lg-fluid" },
+                { staticClass: "col-lg-6 container-left-lg-fluid left" },
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
-                      _c("br"),
                       _c("br"),
                       _c("br"),
                       _vm._v('"Социально-ориентированный бизнес"')
@@ -40482,7 +40868,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-right-lg-fluid col-lg-6",
+                staticClass: "bg-right-lg-fluid col-lg-6 right",
                 staticStyle: {
                   "background-image": "url(img/progress/social.png)"
                 }
@@ -40494,18 +40880,17 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("section", { staticClass: "section-sm pb-0" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
                 {
                   staticClass:
-                    "container-right-lg-fluid col-lg-6 col-lg-offset-6"
+                    "container-right-lg-fluid col-lg-6 col-lg-offset-6 right"
                 },
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
-                      _c("br"),
                       _c("br"),
                       _c("br"),
                       _vm._v(' "Вклад в будущее"')
@@ -40517,7 +40902,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-left-lg-fluid col-lg-6",
+                staticClass: "bg-left-lg-fluid col-lg-6 left",
                 staticStyle: {
                   "background-image": "url(img/progress/vklad.png)"
                 }
@@ -40529,15 +40914,14 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("section", { staticClass: "section-sm pb-0" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
-                { staticClass: "col-lg-6 container-left-lg-fluid" },
+                { staticClass: "col-lg-6 container-left-lg-fluid left" },
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
-                      _c("br"),
                       _c("br"),
                       _c("br"),
                       _vm._v("Все достижения")
@@ -40547,7 +40931,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-right-lg-fluid col-lg-6",
+                staticClass: "bg-right-lg-fluid col-lg-6 right",
                 staticStyle: { "background-image": "url(img/progress/all.png)" }
               })
             ])
@@ -40601,11 +40985,11 @@ var staticRenderFns = [
     return _c("div", { staticClass: "content navbar-sm-space" }, [
       _c("section", { staticClass: "section-sm pb-0" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
-                { staticClass: "col-lg-6 container-left-lg-fluid" },
+                { staticClass: "col-lg-6 container-left-lg-fluid left" },
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
@@ -40623,7 +41007,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-right-lg-fluid col-lg-6",
+                staticClass: "bg-right-lg-fluid col-lg-6 right",
                 staticStyle: {
                   "background-image": "url(img/personal/olga.png)"
                 }
@@ -40635,17 +41019,17 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("section", { staticClass: "section-sm pb-0" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
                 {
                   staticClass:
-                    "container-right-lg-fluid col-lg-6 col-lg-offset-6"
+                    "container-right-lg-fluid col-lg-6 col-lg-offset-6 right"
                 },
                 [
                   _c("h2", { staticClass: "section-title" }, [
-                    _c("p", { staticClass: "color-orange" }, [
+                    _c("p", { staticClass: "color-orange " }, [
                       _vm._v("Логопед")
                     ]),
                     _vm._v(" Бачурина Юлия Сергеевна")
@@ -40656,7 +41040,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-left-lg-fluid col-lg-6",
+                staticClass: "bg-left-lg-fluid col-lg-6 left",
                 staticStyle: {
                   "background-image": "url(img/personal/ylia.png)"
                 }
@@ -40668,11 +41052,11 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("section", { staticClass: "section-sm" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
-                { staticClass: "col-lg-6 container-left-lg-fluid" },
+                { staticClass: "col-lg-6 container-left-lg-fluid left" },
                 [
                   _c("h2", { staticClass: "section-title" }, [
                     _c("p", { staticClass: "color-orange" }, [
@@ -40690,7 +41074,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-right-lg-fluid col-lg-6",
+                staticClass: "bg-right-lg-fluid col-lg-6 right",
                 staticStyle: {
                   "background-image": "url(img/personal/olesa.png)"
                 }
@@ -40702,13 +41086,13 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("section", { staticClass: "section-sm pb-0" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
                 {
                   staticClass:
-                    "container-right-lg-fluid col-lg-6 col-lg-offset-6"
+                    "container-right-lg-fluid col-lg-6 col-lg-offset-6 right"
                 },
                 [
                   _c("h2", { staticClass: "section-title" }, [
@@ -40723,7 +41107,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-left-lg-fluid col-lg-6",
+                staticClass: "bg-left-lg-fluid col-lg-6 left",
                 staticStyle: {
                   "background-image": "url(img/personal/anna.png)"
                 }
@@ -40735,14 +41119,14 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("section", { staticClass: "section-sm" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
-                { staticClass: "col-lg-6 container-left-lg-fluid" },
+                { staticClass: "col-lg-6 container-left-lg-fluid left" },
                 [
                   _c("h2", { staticClass: "section-title" }, [
-                    _c("p", { staticClass: "color-orange" }, [
+                    _c("p", { staticClass: "color-orange title-staff" }, [
                       _vm._v("Преподаватель по адаптивной физкультуре")
                     ]),
                     _vm._v(" Круглова Кристина Дмитриевна")
@@ -40753,7 +41137,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-right-lg-fluid col-lg-6",
+                staticClass: "bg-right-lg-fluid col-lg-6 right",
                 staticStyle: {
                   "background-image": "url(img/personal/kristina.png)"
                 }
@@ -40765,17 +41149,17 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("section", { staticClass: "section-sm pb-0" }, [
         _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "section-lg" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
             _c("div", { staticClass: "row" }, [
               _c(
                 "header",
                 {
                   staticClass:
-                    "container-right-lg-fluid col-lg-6 col-lg-offset-6"
+                    "container-right-lg-fluid col-lg-6 col-lg-offset-6 right"
                 },
                 [
                   _c("h2", { staticClass: "section-title" }, [
-                    _c("p", { staticClass: "color-orange" }, [
+                    _c("p", { staticClass: "color-orange title-staff" }, [
                       _vm._v("Воспитатель")
                     ]),
                     _vm._v(" Темирханова Залина Абидовна")
@@ -40790,7 +41174,7 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", {
-                staticClass: "bg-left-lg-fluid col-lg-6",
+                staticClass: "bg-left-lg-fluid col-lg-6 left",
                 staticStyle: {
                   "background-image": "url(img/personal/zalina.png)"
                 }

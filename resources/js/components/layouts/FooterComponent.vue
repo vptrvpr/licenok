@@ -10,7 +10,7 @@
                         </a>
                     </div>
                     <div class="col-contacts col-base col-md-6 col-lg-6 text-right">
-                        <address><a href="tel:830022233344" class="phone">+8 300 222 333 44</a></address>
+                        <address><a href="tel:830022233344" class="phone">8 (3462) 31-29-30</a></address>
                         <address><a href="mailto:info@Selena.com" class="email">info@licenok.com</a></address>
                     </div>
                 </div>

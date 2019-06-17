@@ -1,19 +1,25 @@
 <template>
     <div class="main-vue">
         <section class="section">
-            <div class="container-fluid">
+            <div class="container-fluid" id="contactsAnimation">
                 <div class="form">
-                    <div class="col-sm-6 form-group">
-                        <input type="text" name="name" v-model="contacts.name" placeholder="Имя">
+                    <div class="col-sm-6 form-group ">
+                        <input type="text" class="left-contact" name="name" v-model="contacts.name" placeholder="Имя">
                     </div>
-                    <div class="col-sm-6 form-group">
-                        <input type="text" name="text" v-model="contacts.number"  placeholder="Телефон или email">
+                    <div class="col-sm-6 form-group ">
+                        <input type="text" class="right-contact" name="text" v-model="contacts.number"
+                               placeholder="Телефон или email">
                     </div>
                     <div class="col-sm-12 form-group">
-                        <textarea rows="3" name="message" v-model="contacts.message"  placeholder="Сообщение"></textarea>
+                        <textarea class="top-contact" rows="3" name="message" v-model="contacts.message"
+                                  placeholder="Сообщение"></textarea>
                     </div>
                     <div class="text-right">
-                        <button type="submit" class="btn btn-orange" @click="sendSlackNotification">Связаться со мной</button>
+                        <span class="button-contact">
+                            <button type="submit" class="btn btn-orange" @click="sendSlackNotification">Связаться со
+                                мной
+                            </button>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -22,14 +28,16 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Спасибо, ваша заявка принята!<br>
-                            Мы свяжемся с вами в ближайшее время</h5>
+                        <h6 class="modal-title">Спасибо, ваша заявка принята!<br>
+                            Мы свяжемся с вами в ближайшее время</h6>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" style="margin-bottom: 10px" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                        <button type="button" style="margin-bottom: 40px" class="btn btn-secondary"
+                                data-dismiss="modal">Закрыть
+                        </button>
                     </div>
                 </div>
             </div>
@@ -64,7 +72,7 @@
                         number: '',
                         message: ''
                     };
-                    $('#myModal').modal('toggle');
+                    $( '#myModal' ).modal( 'toggle' );
                 } );
             },
         }

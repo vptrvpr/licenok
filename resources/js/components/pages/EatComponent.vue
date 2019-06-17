@@ -9,9 +9,9 @@
 
             <section class="section-sm pb-0">
                 <div class="container-fluid">
-                    <div class="section-lg">
+                    <div class="section-lg animation-left-and-right">
                         <div class="row">
-                            <header class="col-lg-6 container-left-lg-fluid">
+                            <header class="col-lg-6 container-left-lg-fluid left">
                                 <h2 class="section-title"><p class="color-orange"> Завтрак</p></h2>
                                 <p class="text-left">Каша, овощное блюдо<br>
                                     Яичное блюдо<br>
@@ -22,7 +22,7 @@
 
                                 </p>
                             </header>
-                            <div class="bg-right-lg-fluid col-lg-6"
+                            <div class="bg-right-lg-fluid col-lg-6 right"
                                  style="background-image:url(img/portfolio/Завтрак.jpg);"></div>
                         </div>
                     </div>
@@ -30,9 +30,9 @@
             </section>
             <section class="section-sm pb-0">
                 <div class="container-fluid">
-                    <div class="section-lg">
+                    <div class="section-lg animation-left-and-right ">
                         <div class="row">
-                            <header class="container-right-lg-fluid col-lg-6 col-lg-offset-6">
+                            <header class="container-right-lg-fluid col-lg-6 col-lg-offset-6 right">
                                 <h2 class="section-title"><p class="color-orange"> Обед</p></h2>
                                 <p class="text-left">
                                     Салат, закуска<br>
@@ -42,7 +42,7 @@
                                     Третье блюдо (напиток)<br>
                                 </p>
                             </header>
-                            <div class="bg-left-lg-fluid col-lg-6"
+                            <div class="bg-left-lg-fluid col-lg-6 left"
                                  style="background-image:url(img/portfolio/lunch.jpg);"></div>
                         </div>
                     </div>
@@ -50,9 +50,9 @@
             </section>
             <section class="section-sm pb-0">
                 <div class="container-fluid">
-                    <div class="section-lg">
+                    <div class="section-lg animation-left-and-right ">
                         <div class="row">
-                            <header class="col-lg-6 container-left-lg-fluid">
+                            <header class="col-lg-6 container-left-lg-fluid left">
                                 <h2 class="section-title"><p class="color-orange"> Полдник</p></h2>
                                 <p class="text-left">
                                     Кефир, молоко<br>
@@ -62,7 +62,7 @@
                                     Хлеб на весь день: пшеничный, ржаной
                                 </p>
                             </header>
-                            <div class="bg-right-lg-fluid col-lg-6"
+                            <div class="bg-right-lg-fluid col-lg-6 right"
                                  style="background-image:url(img/portfolio/полдник.jpg);"></div>
                         </div>
                     </div>

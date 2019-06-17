@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="portfolio-container">
-                        <div class="clearfix">
+                        <div class="clearfix" id="indexAnimationPhotos">
                             <div class="col-portfolio col-sm-6 col-lg-4">
                                 <a href="/our_kindergarten">
                                     <figure class="showcase-item">

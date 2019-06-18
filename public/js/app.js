@@ -2349,6 +2349,34 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {}
 });
@@ -39479,22 +39507,21 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "text-left" }, [
-                    _vm._v("Каша, овощное блюдо"),
-                    _c("br"),
-                    _vm._v("\n                                Яичное блюдо"),
-                    _c("br"),
-                    _vm._v("\n                                Творожное блюдо"),
+                    _vm._v("\n                                Молочные блюда:"),
                     _c("br"),
                     _vm._v(
-                      "\n                                Мясное, рыбное блюдо"
+                      "\n                                1) Каши (ячневая, гречневая, манная, рисовая)"
                     ),
                     _c("br"),
-                    _vm._v("\n                                Салат овощной"),
+                    _vm._v("\n                                2) Запеканка"),
                     _c("br"),
                     _vm._v(
-                      "\n                                Напиток (какао, чай, молоко и т.п.)"
+                      "\n                                Напиток(чай, какао)"
                     ),
-                    _c("br")
+                    _c("br"),
+                    _vm._v(
+                      "\n                                Хлебобулочное изделие с маслом\n                            "
+                    )
                   ])
                 ]
               ),
@@ -39522,23 +39549,13 @@ var staticRenderFns = [
                 },
                 [
                   _c("h2", { staticClass: "section-title" }, [
-                    _c("p", { staticClass: "color-orange" }, [_vm._v(" Обед")])
+                    _c("p", { staticClass: "color-orange" }, [
+                      _vm._v(" Второй завтрак")
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "text-left" }, [
-                    _vm._v("\n                                Салат, закуска"),
-                    _c("br"),
-                    _vm._v("\n                                Первое блюдо"),
-                    _c("br"),
-                    _vm._v(
-                      "\n                                Блюдо из мяса, рыбы, птицы"
-                    ),
-                    _c("br"),
-                    _vm._v("\n                                Гарнир"),
-                    _c("br"),
-                    _vm._v(
-                      "\n                                Третье блюдо (напиток)"
-                    ),
+                    _vm._v("\n                                Фрукты"),
                     _c("br")
                   ])
                 ]
@@ -39547,7 +39564,7 @@ var staticRenderFns = [
               _c("div", {
                 staticClass: "bg-left-lg-fluid col-lg-6 left",
                 staticStyle: {
-                  "background-image": "url(img/portfolio/lunch.jpg)"
+                  "background-image": "url(img/portfolio/apples.jpg)"
                 }
               })
             ])
@@ -39564,27 +39581,20 @@ var staticRenderFns = [
                 { staticClass: "col-lg-6 container-left-lg-fluid left" },
                 [
                   _c("h2", { staticClass: "section-title" }, [
-                    _c("p", { staticClass: "color-orange" }, [
-                      _vm._v(" Полдник")
-                    ])
+                    _c("p", { staticClass: "color-orange" }, [_vm._v(" Обед")])
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "text-left" }, [
-                    _vm._v("\n                                Кефир, молоко"),
-                    _c("br"),
                     _vm._v(
-                      "\n                                Булочка, выпечка (печенье, вафли)"
+                      "\n                                Суп, овощи запеченные"
                     ),
                     _c("br"),
+                    _vm._v("\n                                Напиток(компот)"),
+                    _c("br"),
                     _vm._v(
-                      "\n                                Блюдо из творога, круп, овощей"
+                      "\n                                Хлебобулочное изделие"
                     ),
-                    _c("br"),
-                    _vm._v("\n                                Свежие фрукты"),
-                    _c("br"),
-                    _vm._v(
-                      "\n                                Хлеб на весь день: пшеничный, ржаной\n                            "
-                    )
+                    _c("br")
                   ])
                 ]
               ),
@@ -39592,7 +39602,84 @@ var staticRenderFns = [
               _c("div", {
                 staticClass: "bg-right-lg-fluid col-lg-6 right",
                 staticStyle: {
+                  "background-image": "url(img/portfolio/lunch.jpg)"
+                }
+              })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "section-sm pb-0" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right " }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "header",
+                {
+                  staticClass:
+                    "container-right-lg-fluid col-lg-6 col-lg-offset-6 right"
+                },
+                [
+                  _c("h2", { staticClass: "section-title" }, [
+                    _c("p", { staticClass: "color-orange" }, [
+                      _vm._v(" Полдник")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "text-left" }, [
+                    _vm._v(
+                      "\n                                Отвар сухофруктов,кисломолочные напитки"
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                Хлебобулочное изделие"
+                    ),
+                    _c("br")
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "bg-left-lg-fluid col-lg-6 left",
+                staticStyle: {
                   "background-image": "url(img/portfolio/полдник.jpg)"
+                }
+              })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "section-sm pb-0" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right " }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "header",
+                { staticClass: "col-lg-6 container-left-lg-fluid left" },
+                [
+                  _c("h2", { staticClass: "section-title" }, [
+                    _c("p", { staticClass: "color-orange" }, [_vm._v(" Ужин")])
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "text-left" }, [
+                    _vm._v("\n                                Различные каши"),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                Хлебобулочное изделие"
+                    ),
+                    _c("br"),
+                    _vm._v("\n                                Напиток(чай)"),
+                    _c("br")
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "bg-right-lg-fluid col-lg-6 right",
+                staticStyle: {
+                  "background-image": "url(img/portfolio/ygin.jpg)"
                 }
               })
             ])

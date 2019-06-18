@@ -38721,7 +38721,7 @@ var staticRenderFns = [
                       staticClass: "phone",
                       attrs: { href: "tel:830022233344" }
                     },
-                    [_vm._v("8 (3462) 31-29-30")]
+                    [_vm._v("8 (932) 416-29-30")]
                   )
                 ]),
                 _vm._v(" "),
@@ -39072,7 +39072,7 @@ var staticRenderFns = [
                 staticClass: "bottom-animation",
                 attrs: { href: "tel:+88005553535" }
               },
-              [_vm._v("8 (3462) 31-29-30")]
+              [_vm._v("8 (932) 416-29-30")]
             )
           ]),
           _vm._v(" "),
@@ -39168,7 +39168,7 @@ var staticRenderFns = [
                   _c("i", { staticClass: "icon icon-telephone color-orange" }),
                   _vm._v(" "),
                   _c("div", { staticClass: "address-title" }, [
-                    _vm._v("8 (3462) 31-29-30")
+                    _vm._v("8 (932) 416-29-30")
                   ])
                 ]
               ),

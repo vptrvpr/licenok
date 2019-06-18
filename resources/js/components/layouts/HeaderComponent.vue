@@ -96,7 +96,7 @@
             </nav>
 
             <div class="address-panel hidden-xs hidden-sm">
-                <address><a class="bottom-animation" href="tel:+88005553535">8 (3462) 31-29-30</a></address>
+                <address><a class="bottom-animation" href="tel:+88005553535">8 (932) 416-29-30</a></address>
                 <address><a class="bottom-animation" href="mailto:info@Selena.com">info@licenok.com</a></address>
             </div>
             <ul class="social-list bottom-animation">

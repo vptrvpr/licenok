@@ -74,7 +74,7 @@
                                 </p>
                             </header>
                             <div class="bg-left-lg-fluid col-lg-6 left"
-                                 style="background-image:url(img/portfolio/полдник.jpg);"></div>
+                                 style="background-image:url(img/portfolio/Полдник.png);"></div>
                         </div>
                     </div>
                 </div>

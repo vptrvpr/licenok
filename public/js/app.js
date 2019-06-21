@@ -39776,7 +39776,7 @@ var staticRenderFns = [
               _c("div", {
                 staticClass: "bg-left-lg-fluid col-lg-6 left",
                 staticStyle: {
-                  "background-image": "url(img/portfolio/полдник.jpg)"
+                  "background-image": "url(img/portfolio/Полдник.png)"
                 }
               })
             ])

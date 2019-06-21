@@ -15,9 +15,9 @@
                     </div>
                     <div class="isotope js-gallery top_30" id="indexAnimationPhotos">
                         <div class="isotope-item wedding">
-                            <a href="img/sadik/98p8Dz1GVI0.jpg" >
+                            <a href="img/sadik/sadik-1.png" >
                                 <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/98p8Dz1GVI0.jpg">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/sadik-1.png">
                                     </div>
                                     <figcaption class="showcase-item-hover2">
                                         <i class="icon-plus"></i>
@@ -27,9 +27,9 @@
                             </a>
                         </div>
                         <div class="isotope-item wedding">
-                            <a href="img/sadik/gbcw4I_YAxs.jpg" >
+                            <a href="img/sadik/1.png" >
                                 <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/gbcw4I_YAxs.jpg">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/1.png">
                                     </div>
                                     <figcaption class="showcase-item-hover2">
                                         <i class="icon-plus"></i>
@@ -39,9 +39,9 @@
                             </a>
                         </div>
                         <div class="isotope-item wedding">
-                            <a href="img/sadik/MZ0Sy9W-zOE.jpg" >
+                            <a href="img/sadik/2.png" >
                                 <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/MZ0Sy9W-zOE.jpg">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/2.png">
                                     </div>
                                     <figcaption class="showcase-item-hover2">
                                         <i class="icon-plus"></i>
@@ -51,9 +51,9 @@
                             </a>
                         </div>
                         <div class="isotope-item wedding">
-                            <a href="img/sadik/eyGixXDdBV4.jpg" >
+                            <a href="img/sadik/3.png" >
                                 <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/eyGixXDdBV4.jpg">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/3.png">
                                     </div>
                                     <figcaption class="showcase-item-hover2">
                                         <i class="icon-plus"></i>
@@ -63,9 +63,9 @@
                             </a>
                         </div>
                         <div class="isotope-item wedding">
-                            <a href="img/sadik/PXQASPVsOW8.jpg" >
+                            <a href="img/sadik/4.png" >
                                 <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/PXQASPVsOW8.jpg">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/4.png">
                                     </div>
                                     <figcaption class="showcase-item-hover2">
                                         <i class="icon-plus"></i>
@@ -75,9 +75,9 @@
                             </a>
                         </div>
                         <div class="isotope-item wedding">
-                            <a href="img/sadik/XcTQP8mi_og.jpg" >
+                            <a href="img/sadik/5.png" >
                                 <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/XcTQP8mi_og.jpg">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/5.png">
                                     </div>
                                     <figcaption class="showcase-item-hover2">
                                         <i class="icon-plus"></i>
@@ -86,6 +86,118 @@
                                 </figure>
                             </a>
                         </div>
+                        <div class="isotope-item wedding">
+                            <a href="img/sadik/6.png" >
+                                <figure class="showcase-item">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/6.png">
+                                    </div>
+                                    <figcaption class="showcase-item-hover2">
+                                        <i class="icon-plus"></i>
+
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="isotope-item wedding">
+                            <a href="img/sadik/7.png" >
+                                <figure class="showcase-item">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/7.png">
+                                    </div>
+                                    <figcaption class="showcase-item-hover2">
+                                        <i class="icon-plus"></i>
+
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="isotope-item wedding">
+                            <a href="img/sadik/8.png" >
+                                <figure class="showcase-item">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/8.png">
+                                    </div>
+                                    <figcaption class="showcase-item-hover2">
+                                        <i class="icon-plus"></i>
+
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="isotope-item wedding">
+                            <a href="img/sadik/8.png" >
+                                <figure class="showcase-item">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/8.png">
+                                    </div>
+                                    <figcaption class="showcase-item-hover2">
+                                        <i class="icon-plus"></i>
+
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="isotope-item wedding">
+                            <a href="img/sadik/9.png" >
+                                <figure class="showcase-item">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/9.png">
+                                    </div>
+                                    <figcaption class="showcase-item-hover2">
+                                        <i class="icon-plus"></i>
+
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="isotope-item wedding">
+                            <a href="img/sadik/10.png" >
+                                <figure class="showcase-item">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/10.png">
+                                    </div>
+                                    <figcaption class="showcase-item-hover2">
+                                        <i class="icon-plus"></i>
+
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="isotope-item wedding">
+                            <a href="img/sadik/11.png" >
+                                <figure class="showcase-item">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/11.png">
+                                    </div>
+                                    <figcaption class="showcase-item-hover2">
+                                        <i class="icon-plus"></i>
+
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="isotope-item wedding">
+                            <a href="img/sadik/12.png" >
+                                <figure class="showcase-item">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/12.png">
+                                    </div>
+                                    <figcaption class="showcase-item-hover2">
+                                        <i class="icon-plus"></i>
+
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="isotope-item wedding">
+                            <a href="img/sadik/13.png" >
+                                <figure class="showcase-item">
+                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/13.png">
+                                    </div>
+                                    <figcaption class="showcase-item-hover2">
+                                        <i class="icon-plus"></i>
+
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+
+
+
                         <div class="isotope-item wedding">
                             <a href="img/sadik/tPA1vnivi7s.jpg" >
                                 <figure class="showcase-item">
@@ -102,90 +214,6 @@
                             <a href="img/sadik/CqYXCn5DWio.jpg" >
                                 <figure class="showcase-item">
                                     <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/CqYXCn5DWio.jpg">
-                                    </div>
-                                    <figcaption class="showcase-item-hover2">
-                                        <i class="icon-plus"></i>
-
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="isotope-item wedding">
-                            <a href="img/sadik/sadik.jpg" >
-                                <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/sadik.jpg">
-                                    </div>
-                                    <figcaption class="showcase-item-hover2">
-                                        <i class="icon-plus"></i>
-
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="isotope-item wedding">
-                            <a href="img/sadik/sadik-vnutri.jpg" >
-                                <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/sadik-vnutri.jpg">
-                                    </div>
-                                    <figcaption class="showcase-item-hover2">
-                                        <i class="icon-plus"></i>
-
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="isotope-item wedding">
-                            <a href="img/sadik/DSC_0363.jpg" >
-                                <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/asdasdasd.png">
-                                    </div>
-                                    <figcaption class="showcase-item-hover2">
-                                        <i class="icon-plus"></i>
-
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="isotope-item wedding">
-                            <a href="img/sadik/fon.jpg" >
-                                <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/fon.jpg">
-                                    </div>
-                                    <figcaption class="showcase-item-hover2">
-                                        <i class="icon-plus"></i>
-
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="isotope-item wedding">
-                            <a href="img/sadik/beer.jpg" >
-                                <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/beer.jpg">
-                                    </div>
-                                    <figcaption class="showcase-item-hover2">
-                                        <i class="icon-plus"></i>
-
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="isotope-item wedding">
-                            <a href="img/sadik/krovati.jpg" >
-                                <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/krovati.jpg">
-                                    </div>
-                                    <figcaption class="showcase-item-hover2">
-                                        <i class="icon-plus"></i>
-
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="isotope-item wedding">
-                            <a href="img/sadik/qweasdasd.jpg" >
-                                <figure class="showcase-item">
-                                    <div class="showcase-item-thumbnail"><img alt="" src="img/sadik/qweasdasd.jpg">
                                     </div>
                                     <figcaption class="showcase-item-hover2">
                                         <i class="icon-plus"></i>

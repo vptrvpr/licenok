@@ -19,30 +19,42 @@
                                 <tbody>
                                 <tr>
                                     <td><h3 class="color-orange" style="white-space: nowrap;">7:00 - 7:50</h3></td>
-                                    <td><h6>Приём детей на воздухе</h6></td>
+                                    <td><h6>Приём детей</h6></td>
                                 </tr>
                                 <tr>
                                     <td><h3 class="color-orange">7:50 - 8:35</h3></td>
                                     <td><h6>Подготовка к завтраку, завтрак</h6></td>
                                 </tr>
                                 <tr>
-                                    <td><h3 class="color-orange">8:45 - 9:00</h3></td>
-                                    <td><h6>Первое занятие, игры</h6></td>
+                                    <td><h3 class="color-orange">8:35 - 9:00</h3></td>
+                                    <td><h6>Самостоятельная деятельность</h6></td>
                                 </tr>
                                 <tr>
-                                    <td><h3 class="color-orange">9:00 - 11:20</h3></td>
-                                    <td><h6>Подготовка к прогулке, прогулка</h6></td>
+                                    <td><h3 class="color-orange">9:00 - 9:15</h3></td>
+                                    <td><h6>Первое занятие</h6></td>
                                 </tr>
                                 <tr>
-                                    <td><h3 class="color-orange">11:15 - 11:45</h3></td>
+                                    <td><h3 class="color-orange">9:15 - 10:00</h3></td>
+                                    <td><h6>Игры</h6></td>
+                                </tr>
+                                <tr>
+                                    <td><h3 class="color-orange">10:00 - 10:15</h3></td>
+                                    <td><h6>Второй завтрак</h6></td>
+                                </tr>
+                                <tr>
+                                    <td><h3 class="color-orange">10:15 - 11:15</h3></td>
+                                    <td><h6>Подготовка к прогулке,прогулка</h6></td>
+                                </tr>
+                                <tr>
+                                    <td><h3 class="color-orange">11:15 - 11:30</h3></td>
                                     <td><h6>Возвращение с прогулки, самостоятельная деятельность, подготовка к обеду</h6></td>
                                 </tr>
                                 <tr>
-                                    <td><h3 class="color-orange">11:45 - 12:20</h3></td>
+                                    <td><h3 class="color-orange">11:30 - 12:00</h3></td>
                                     <td><h6>Обед</h6></td>
                                 </tr>
                                 <tr>
-                                    <td><h3 class="color-orange">12:20 - 15:00</h3></td>
+                                    <td><h3 class="color-orange">12:00 - 15:00</h3></td>
                                     <td><h6>Подготовка ко сну, сон</h6></td>
                                 </tr>
                                 <tr>
@@ -62,7 +74,15 @@
                                     <td><h6>Второе занятие</h6></td>
                                 </tr>
                                 <tr>
-                                    <td><h3 class="color-orange">16:15 - 19:00</h3></td>
+                                    <td><h3 class="color-orange">16:00 - 16:30</h3></td>
+                                    <td><h6>Самостоятельная деятельность</h6></td>
+                                </tr>
+                                <tr>
+                                    <td><h3 class="color-orange">16:30 - 17:00</h3></td>
+                                    <td><h6>Подготовка к ужину, ужин</h6></td>
+                                </tr>
+                                <tr>
+                                    <td><h3 class="color-orange">17:00 - 19:00</h3></td>
                                     <td><h6>Подготовка к прогулке, прогулка, уход домой</h6></td>
                                 </tr>
                                 </tbody>

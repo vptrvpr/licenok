@@ -10,7 +10,7 @@
             <section id="contact" class="contacts">
                 <div id="map" class="map">
                     <iframe
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A0449852a908de2377dab0559bffd1da0d4e255875f450da4206f8131b880b65d&amp;source=constructor"
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A49f7bf1a14afa3207f22f302ec6016a977503fa695192446273e2f2718154f2b&amp;source=constructor"
                         frameborder="0"></iframe>
                 </div>
                 <section class="section bg-light">
@@ -26,7 +26,9 @@
                             </div>
                             <div class="col-md-4 col-base address-item address-fl-item">
                                 <i class="icon icon-map-marker color-orange"></i>
-                                <div class="address-title">Ханты-Мансийский автономный округ</div>
+                                <div class="address-title">Ханты-Мансийский автономный округ - Югра сургутский район
+                                    пгт. Барсово ДНТ "Барсовское" ул. 8 правая уч. 4
+                                </div>
                             </div>
                         </div>
                     </div>

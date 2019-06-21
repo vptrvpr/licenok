@@ -19,6 +19,20 @@
                 <div class="container-fluid">
                     <div class="section-lg animation-left-and-right">
                         <div class="row">
+                            <header class="container-right-lg-fluid col-lg-6 col-lg-offset-6 right">
+                                <h2 class="section-title"><p class="color-orange"><br><br>Первая победа</p></h2>
+                                <p></p>
+                            </header>
+                            <div class="bg-left-lg-fluid col-lg-6 left"
+                                 style="background-image:url(img/sadik/qweasdasd.jpg);"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-sm pb-0">
+                <div class="container-fluid">
+                    <div class="section-lg animation-left-and-right">
+                        <div class="row">
                             <header class="col-lg-6 container-left-lg-fluid left">
                                 <h2 class="section-title"><p class="color-orange"><br><br>"Социально-ориентированный бизнес"</p></h2>
                             </header>

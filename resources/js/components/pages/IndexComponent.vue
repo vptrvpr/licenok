@@ -49,11 +49,11 @@
                     <div class="container-fluid">
                         <div class="row">
                             <header class="text-center col-lg-8 col-lg-offset-2">
-                                <h5 class="general-title color-orange">Открыт набор детей на новый учебный год!</h5>
-                                <h5 class="general-title">Присоединяйтесь! Количество мест ограничено!</h5>
+                                <h5 class="general-title color-orange">Улыбнитесь! Мы любим Вас и Ваших детей! Нам в радость заботиться о Ваших
+                                    детях!</h5>
+                                <h6 class="general-title">Открыт набор детей на новый учебный год!<br>
+                                   Количество мест ограничено!</h6>
                                 <div class="about-entry text-center">
-                                    <p>Улыбнитесь! Мы любим Вас и Ваших детей! Нам в радость заботиться о Ваших
-                                        детях!</p>
                                 </div>
                             </header>
                         </div>
@@ -64,7 +64,7 @@
                                 <a href="/our_kindergarten">
                                     <figure class="showcase-item">
                                         <div class="showcase-item-thumbnail"><img alt=""
-                                                                                  src="img/sadik/sadik.jpg">
+                                                                                  src="img/sadik/sadik-1.png">
                                         </div>
                                         <figcaption class="showcase-item-hover">
                                             <div class="showcase-item-info">
@@ -78,7 +78,7 @@
                                 <a href="/our_kindergarten">
                                     <figure class="showcase-item">
                                         <div class="showcase-item-thumbnail"><img alt=""
-                                                                                  src="img/sadik/sadik-vnutri.jpg">
+                                                                                  src="img/sadik/1.png">
                                         </div>
                                         <figcaption class="showcase-item-hover">
                                             <div class="showcase-item-info">
@@ -92,7 +92,7 @@
                                 <a href="/our_kindergarten">
                                     <figure class="showcase-item">
                                         <div class="showcase-item-thumbnail"><img alt=""
-                                                                                  src="img/sadik/asdasdasd.png">
+                                                                                  src="img/sadik/2.png">
                                         </div>
                                         <figcaption class="showcase-item-hover">
                                             <div class="showcase-item-info">
@@ -106,7 +106,7 @@
                                 <a href="/our_kindergarten">
                                     <figure class="showcase-item">
                                         <div class="showcase-item-thumbnail"><img alt=""
-                                                                                  src="img/sadik/fon.jpg">
+                                                                                  src="img/sadik/3.png">
                                         </div>
                                         <figcaption class="showcase-item-hover">
                                             <div class="showcase-item-info">
@@ -120,7 +120,7 @@
                                 <a href="/our_kindergarten">
                                     <figure class="showcase-item">
                                         <div class="showcase-item-thumbnail"><img alt=""
-                                                                                  src="img/sadik/beer.jpg">
+                                                                                  src="img/sadik/4.png">
                                         </div>
                                         <figcaption class="showcase-item-hover">
                                             <div class="showcase-item-info">
@@ -134,7 +134,7 @@
                                 <a href="/our_kindergarten">
                                     <figure class="showcase-item">
                                         <div class="showcase-item-thumbnail"><img alt=""
-                                                                                  src="img/sadik/krovati.jpg">
+                                                                                  src="img/sadik/5.png">
                                         </div>
                                         <figcaption class="showcase-item-hover">
                                             <div class="showcase-item-info">

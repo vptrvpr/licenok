@@ -2156,6 +2156,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {}
 });
@@ -2255,6 +2257,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {}
 });
@@ -2270,6 +2292,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -2899,6 +2922,34 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {}
 });
@@ -2914,6 +2965,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -3060,6 +3112,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {}
 });
@@ -3075,6 +3141,19 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -39178,7 +39257,7 @@ var staticRenderFns = [
           _c("iframe", {
             attrs: {
               src:
-                "https://yandex.ru/map-widget/v1/?um=constructor%3A0449852a908de2377dab0559bffd1da0d4e255875f450da4206f8131b880b65d&source=constructor",
+                "https://yandex.ru/map-widget/v1/?um=constructor%3A49f7bf1a14afa3207f22f302ec6016a977503fa695192446273e2f2718154f2b&source=constructor",
               frameborder: "0"
             }
           })
@@ -39224,7 +39303,9 @@ var staticRenderFns = [
                   _c("i", { staticClass: "icon icon-map-marker color-orange" }),
                   _vm._v(" "),
                   _c("div", { staticClass: "address-title" }, [
-                    _vm._v("Ханты-Мансийский автономный округ")
+                    _vm._v(
+                      'Ханты-Мансийский автономный округ - Югра сургутский район\n                                пгт. Барсово ДНТ "Барсовское" ул. 8 правая уч. 4\n                            '
+                    )
                   ])
                 ]
               )
@@ -39311,7 +39392,7 @@ var staticRenderFns = [
                       )
                     ]),
                     _vm._v(" "),
-                    _c("td", [_c("h6", [_vm._v("Приём детей на воздухе")])])
+                    _c("td", [_c("h6", [_vm._v("Приём детей")])])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
@@ -39329,29 +39410,61 @@ var staticRenderFns = [
                   _c("tr", [
                     _c("td", [
                       _c("h3", { staticClass: "color-orange" }, [
-                        _vm._v("8:45 - 9:00")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [_c("h6", [_vm._v("Первое занятие, игры")])])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [
-                      _c("h3", { staticClass: "color-orange" }, [
-                        _vm._v("9:00 - 11:20")
+                        _vm._v("8:35 - 9:00")
                       ])
                     ]),
                     _vm._v(" "),
                     _c("td", [
-                      _c("h6", [_vm._v("Подготовка к прогулке, прогулка")])
+                      _c("h6", [_vm._v("Самостоятельная деятельность")])
                     ])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
                     _c("td", [
                       _c("h3", { staticClass: "color-orange" }, [
-                        _vm._v("11:15 - 11:45")
+                        _vm._v("9:00 - 9:15")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_c("h6", [_vm._v("Первое занятие")])])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("9:15 - 10:00")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_c("h6", [_vm._v("Игры")])])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("10:00 - 10:15")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_c("h6", [_vm._v("Второй завтрак")])])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("10:15 - 11:15")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("h6", [_vm._v("Подготовка к прогулке,прогулка")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("11:15 - 11:30")
                       ])
                     ]),
                     _vm._v(" "),
@@ -39367,7 +39480,7 @@ var staticRenderFns = [
                   _c("tr", [
                     _c("td", [
                       _c("h3", { staticClass: "color-orange" }, [
-                        _vm._v("11:45 - 12:20")
+                        _vm._v("11:30 - 12:00")
                       ])
                     ]),
                     _vm._v(" "),
@@ -39377,7 +39490,7 @@ var staticRenderFns = [
                   _c("tr", [
                     _c("td", [
                       _c("h3", { staticClass: "color-orange" }, [
-                        _vm._v("12:20 - 15:00")
+                        _vm._v("12:00 - 15:00")
                       ])
                     ]),
                     _vm._v(" "),
@@ -39431,7 +39544,29 @@ var staticRenderFns = [
                   _c("tr", [
                     _c("td", [
                       _c("h3", { staticClass: "color-orange" }, [
-                        _vm._v("16:15 - 19:00")
+                        _vm._v("16:00 - 16:30")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("h6", [_vm._v("Самостоятельная деятельность")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("16:30 - 17:00")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_c("h6", [_vm._v("Подготовка к ужину, ужин")])])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [
+                      _c("h3", { staticClass: "color-orange" }, [
+                        _vm._v("17:00 - 19:00")
                       ])
                     ]),
                     _vm._v(" "),
@@ -39510,10 +39645,8 @@ var staticRenderFns = [
                     _vm._v("\n                                Молочные блюда:"),
                     _c("br"),
                     _vm._v(
-                      "\n                                1) Каши (ячневая, гречневая, манная, рисовая)"
+                      "\n                                1) Каши (ячневая, гречневая, манная, рисовая, и тд)"
                     ),
-                    _c("br"),
-                    _vm._v("\n                                2) Запеканка"),
                     _c("br"),
                     _vm._v(
                       "\n                                Напиток(чай, какао)"
@@ -39556,6 +39689,8 @@ var staticRenderFns = [
                   _vm._v(" "),
                   _c("p", { staticClass: "text-left" }, [
                     _vm._v("\n                                Фрукты"),
+                    _c("br"),
+                    _vm._v("\n                                Сок"),
                     _c("br")
                   ])
                 ]
@@ -39586,10 +39721,12 @@ var staticRenderFns = [
                   _vm._v(" "),
                   _c("p", { staticClass: "text-left" }, [
                     _vm._v(
-                      "\n                                Суп, овощи запеченные"
+                      "\n                                Первое блюдо (суп, рассольник, борщ, уха и тд)"
                     ),
                     _c("br"),
-                    _vm._v("\n                                Напиток(компот)"),
+                    _vm._v("\n                                Второе блюдо"),
+                    _c("br"),
+                    _vm._v("\n                                Напиток"),
                     _c("br"),
                     _vm._v(
                       "\n                                Хлебобулочное изделие"
@@ -39628,13 +39765,9 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "text-left" }, [
-                    _vm._v(
-                      "\n                                Отвар сухофруктов,кисломолочные напитки"
-                    ),
+                    _vm._v("\n                                Напиток"),
                     _c("br"),
-                    _vm._v(
-                      "\n                                Хлебобулочное изделие"
-                    ),
+                    _vm._v("\n                                Сдоба"),
                     _c("br")
                   ])
                 ]
@@ -39664,13 +39797,13 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "text-left" }, [
-                    _vm._v("\n                                Различные каши"),
+                    _vm._v("\n                                Второе блюдо"),
                     _c("br"),
                     _vm._v(
                       "\n                                Хлебобулочное изделие"
                     ),
                     _c("br"),
-                    _vm._v("\n                                Напиток(чай)"),
+                    _vm._v("\n                                Напиток"),
                     _c("br")
                   ])
                 ]
@@ -40229,20 +40362,20 @@ var staticRenderFns = [
             { staticClass: "text-center col-lg-8 col-lg-offset-2" },
             [
               _c("h5", { staticClass: "general-title color-orange" }, [
-                _vm._v("Открыт набор детей на новый учебный год!")
+                _vm._v(
+                  "Улыбнитесь! Мы любим Вас и Ваших детей! Нам в радость заботиться о Ваших\n                                детях!"
+                )
               ]),
               _vm._v(" "),
-              _c("h5", { staticClass: "general-title" }, [
-                _vm._v("Присоединяйтесь! Количество мест ограничено!")
+              _c("h6", { staticClass: "general-title" }, [
+                _vm._v("Открыт набор детей на новый учебный год!"),
+                _c("br"),
+                _vm._v(
+                  "\n                               Количество мест ограничено!"
+                )
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "about-entry text-center" }, [
-                _c("p", [
-                  _vm._v(
-                    "Улыбнитесь! Мы любим Вас и Ваших детей! Нам в радость заботиться о Ваших\n                                    детях!"
-                  )
-                ])
-              ])
+              _c("div", { staticClass: "about-entry text-center" })
             ]
           )
         ])
@@ -40258,7 +40391,7 @@ var staticRenderFns = [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
                     _c("img", {
-                      attrs: { alt: "", src: "img/sadik/sadik.jpg" }
+                      attrs: { alt: "", src: "img/sadik/sadik-1.png" }
                     })
                   ]),
                   _vm._v(" "),
@@ -40277,9 +40410,7 @@ var staticRenderFns = [
               _c("a", { attrs: { href: "/our_kindergarten" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/sadik-vnutri.jpg" }
-                    })
+                    _c("img", { attrs: { alt: "", src: "img/sadik/1.png" } })
                   ]),
                   _vm._v(" "),
                   _c("figcaption", { staticClass: "showcase-item-hover" }, [
@@ -40297,9 +40428,7 @@ var staticRenderFns = [
               _c("a", { attrs: { href: "/our_kindergarten" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/asdasdasd.png" }
-                    })
+                    _c("img", { attrs: { alt: "", src: "img/sadik/2.png" } })
                   ]),
                   _vm._v(" "),
                   _c("figcaption", { staticClass: "showcase-item-hover" }, [
@@ -40317,7 +40446,7 @@ var staticRenderFns = [
               _c("a", { attrs: { href: "/our_kindergarten" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", { attrs: { alt: "", src: "img/sadik/fon.jpg" } })
+                    _c("img", { attrs: { alt: "", src: "img/sadik/3.png" } })
                   ]),
                   _vm._v(" "),
                   _c("figcaption", { staticClass: "showcase-item-hover" }, [
@@ -40335,7 +40464,7 @@ var staticRenderFns = [
               _c("a", { attrs: { href: "/our_kindergarten" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", { attrs: { alt: "", src: "img/sadik/beer.jpg" } })
+                    _c("img", { attrs: { alt: "", src: "img/sadik/4.png" } })
                   ]),
                   _vm._v(" "),
                   _c("figcaption", { staticClass: "showcase-item-hover" }, [
@@ -40353,9 +40482,7 @@ var staticRenderFns = [
               _c("a", { attrs: { href: "/our_kindergarten" } }, [
                 _c("figure", { staticClass: "showcase-item" }, [
                   _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                    _c("img", {
-                      attrs: { alt: "", src: "img/sadik/krovati.jpg" }
-                    })
+                    _c("img", { attrs: { alt: "", src: "img/sadik/5.png" } })
                   ]),
                   _vm._v(" "),
                   _c("figcaption", { staticClass: "showcase-item-hover" }, [
@@ -40442,11 +40569,11 @@ var staticRenderFns = [
             },
             [
               _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/98p8Dz1GVI0.jpg" } }, [
+                _c("a", { attrs: { href: "img/sadik/sadik-1.png" } }, [
                   _c("figure", { staticClass: "showcase-item" }, [
                     _c("div", { staticClass: "showcase-item-thumbnail" }, [
                       _c("img", {
-                        attrs: { alt: "", src: "img/sadik/98p8Dz1GVI0.jpg" }
+                        attrs: { alt: "", src: "img/sadik/sadik-1.png" }
                       })
                     ]),
                     _vm._v(" "),
@@ -40458,12 +40585,10 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/gbcw4I_YAxs.jpg" } }, [
+                _c("a", { attrs: { href: "img/sadik/1.png" } }, [
                   _c("figure", { staticClass: "showcase-item" }, [
                     _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/gbcw4I_YAxs.jpg" }
-                      })
+                      _c("img", { attrs: { alt: "", src: "img/sadik/1.png" } })
                     ]),
                     _vm._v(" "),
                     _c("figcaption", { staticClass: "showcase-item-hover2" }, [
@@ -40474,12 +40599,10 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/MZ0Sy9W-zOE.jpg" } }, [
+                _c("a", { attrs: { href: "img/sadik/2.png" } }, [
                   _c("figure", { staticClass: "showcase-item" }, [
                     _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/MZ0Sy9W-zOE.jpg" }
-                      })
+                      _c("img", { attrs: { alt: "", src: "img/sadik/2.png" } })
                     ]),
                     _vm._v(" "),
                     _c("figcaption", { staticClass: "showcase-item-hover2" }, [
@@ -40490,12 +40613,10 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/eyGixXDdBV4.jpg" } }, [
+                _c("a", { attrs: { href: "img/sadik/3.png" } }, [
                   _c("figure", { staticClass: "showcase-item" }, [
                     _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/eyGixXDdBV4.jpg" }
-                      })
+                      _c("img", { attrs: { alt: "", src: "img/sadik/3.png" } })
                     ]),
                     _vm._v(" "),
                     _c("figcaption", { staticClass: "showcase-item-hover2" }, [
@@ -40506,12 +40627,10 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/PXQASPVsOW8.jpg" } }, [
+                _c("a", { attrs: { href: "img/sadik/4.png" } }, [
                   _c("figure", { staticClass: "showcase-item" }, [
                     _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/PXQASPVsOW8.jpg" }
-                      })
+                      _c("img", { attrs: { alt: "", src: "img/sadik/4.png" } })
                     ]),
                     _vm._v(" "),
                     _c("figcaption", { staticClass: "showcase-item-hover2" }, [
@@ -40522,12 +40641,136 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/XcTQP8mi_og.jpg" } }, [
+                _c("a", { attrs: { href: "img/sadik/5.png" } }, [
                   _c("figure", { staticClass: "showcase-item" }, [
                     _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/XcTQP8mi_og.jpg" }
-                      })
+                      _c("img", { attrs: { alt: "", src: "img/sadik/5.png" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/6.png" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", { attrs: { alt: "", src: "img/sadik/6.png" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/7.png" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", { attrs: { alt: "", src: "img/sadik/7.png" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/8.png" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", { attrs: { alt: "", src: "img/sadik/8.png" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/8.png" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", { attrs: { alt: "", src: "img/sadik/8.png" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/9.png" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", { attrs: { alt: "", src: "img/sadik/9.png" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/10.png" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", { attrs: { alt: "", src: "img/sadik/10.png" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/11.png" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", { attrs: { alt: "", src: "img/sadik/11.png" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/12.png" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", { attrs: { alt: "", src: "img/sadik/12.png" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
+                      _c("i", { staticClass: "icon-plus" })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "isotope-item wedding" }, [
+                _c("a", { attrs: { href: "img/sadik/13.png" } }, [
+                  _c("figure", { staticClass: "showcase-item" }, [
+                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
+                      _c("img", { attrs: { alt: "", src: "img/sadik/13.png" } })
                     ]),
                     _vm._v(" "),
                     _c("figcaption", { staticClass: "showcase-item-hover2" }, [
@@ -40559,118 +40802,6 @@ var staticRenderFns = [
                     _c("div", { staticClass: "showcase-item-thumbnail" }, [
                       _c("img", {
                         attrs: { alt: "", src: "img/sadik/CqYXCn5DWio.jpg" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                      _c("i", { staticClass: "icon-plus" })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/sadik.jpg" } }, [
-                  _c("figure", { staticClass: "showcase-item" }, [
-                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/sadik.jpg" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                      _c("i", { staticClass: "icon-plus" })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/sadik-vnutri.jpg" } }, [
-                  _c("figure", { staticClass: "showcase-item" }, [
-                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/sadik-vnutri.jpg" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                      _c("i", { staticClass: "icon-plus" })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/DSC_0363.jpg" } }, [
-                  _c("figure", { staticClass: "showcase-item" }, [
-                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/asdasdasd.png" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                      _c("i", { staticClass: "icon-plus" })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/fon.jpg" } }, [
-                  _c("figure", { staticClass: "showcase-item" }, [
-                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/fon.jpg" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                      _c("i", { staticClass: "icon-plus" })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/beer.jpg" } }, [
-                  _c("figure", { staticClass: "showcase-item" }, [
-                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/beer.jpg" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                      _c("i", { staticClass: "icon-plus" })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/krovati.jpg" } }, [
-                  _c("figure", { staticClass: "showcase-item" }, [
-                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/krovati.jpg" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("figcaption", { staticClass: "showcase-item-hover2" }, [
-                      _c("i", { staticClass: "icon-plus" })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "isotope-item wedding" }, [
-                _c("a", { attrs: { href: "img/sadik/qweasdasd.jpg" } }, [
-                  _c("figure", { staticClass: "showcase-item" }, [
-                    _c("div", { staticClass: "showcase-item-thumbnail" }, [
-                      _c("img", {
-                        attrs: { alt: "", src: "img/sadik/qweasdasd.jpg" }
                       })
                     ]),
                     _vm._v(" "),
@@ -40806,7 +40937,11 @@ var staticRenderFns = [
                           [
                             _vm._v("Доп."),
                             _c("br"),
-                            _vm._v(" занятия- групповые")
+                            _vm._v(" занятия- групповые,"),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                    Мастер классы"
+                            )
                           ]
                         ),
                         _vm._v(" "),
@@ -40817,7 +40952,7 @@ var staticRenderFns = [
                           },
                           [
                             _vm._v(
-                              "\n                                        200 руб/час"
+                              "\n                                       от 200 руб"
                             ),
                             _c("br")
                           ]
@@ -40932,6 +41067,40 @@ var staticRenderFns = [
                 )
               ]
             )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "section-sm pb-0" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "header",
+                {
+                  staticClass:
+                    "container-right-lg-fluid col-lg-6 col-lg-offset-6 right"
+                },
+                [
+                  _c("h2", { staticClass: "section-title" }, [
+                    _c("p", { staticClass: "color-orange" }, [
+                      _c("br"),
+                      _c("br"),
+                      _vm._v("Первая победа")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("p")
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "bg-left-lg-fluid col-lg-6 left",
+                staticStyle: {
+                  "background-image": "url(img/sadik/qweasdasd.jpg)"
+                }
+              })
+            ])
           ])
         ])
       ]),
@@ -41264,6 +41433,36 @@ var staticRenderFns = [
                 staticClass: "bg-left-lg-fluid col-lg-6 left",
                 staticStyle: {
                   "background-image": "url(img/personal/zalina.png)"
+                }
+              })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "section-sm" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "section-lg animation-left-and-right" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "header",
+                { staticClass: "col-lg-6 container-left-lg-fluid left" },
+                [
+                  _c("h2", { staticClass: "section-title" }, [
+                    _c("p", { staticClass: "color-orange title-staff" }, [
+                      _vm._v("Младший Воспитатель")
+                    ]),
+                    _vm._v(" Потуданская Юлия Андреевна")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Средне-специальное")])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "bg-right-lg-fluid col-lg-6 right",
+                staticStyle: {
+                  "background-image": "url(img/personal/julia-2.png)"
                 }
               })
             ])

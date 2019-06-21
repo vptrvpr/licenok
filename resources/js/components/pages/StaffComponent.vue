@@ -85,6 +85,19 @@
                     </div>
                 </div>
             </section>
+            <section class="section-sm">
+                <div class="container-fluid">
+                    <div class="section-lg animation-left-and-right">
+                        <div class="row">
+                            <header class="col-lg-6 container-left-lg-fluid left">
+                                <h2 class="section-title"> <p class="color-orange title-staff">Младший Воспитатель</p> Потуданская Юлия Андреевна</h2>
+                                <p>Средне-специальное</p>
+                            </header>
+                            <div class="bg-right-lg-fluid col-lg-6 right"  style="background-image:url(img/personal/julia-2.png);"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
 

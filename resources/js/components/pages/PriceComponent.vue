@@ -28,9 +28,10 @@
                             <div class="col-md-4 showcase-item">
                                 <div class="card card-orange" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h6 class="card-title color-orange text-center">Доп.<br> занятия- групповые</h6>
+                                        <h6 class="card-title color-orange text-center">Доп.<br> занятия- групповые,<br>
+                                        Мастер классы</h6>
                                         <p class="card-text card-price-text text-center">
-                                            200 руб/час<br>
+                                           от 200 руб<br>
                                         </p>
                                     </div>
                                 </div>

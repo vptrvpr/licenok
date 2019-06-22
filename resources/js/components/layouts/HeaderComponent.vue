@@ -57,7 +57,7 @@
         <header class="visible-md visible-lg navbar-left">
             <div class="brand-panel">
                 <a href="/" class="js-target-scroll">
-                    <img src="images/logo_2.png" class="logo-desktop-sidebar" height="150px">
+                    <img src="images/logo_3.png" class="logo-desktop-sidebar" height="150px">
                 </a>
             </div>
 

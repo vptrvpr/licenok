@@ -18,7 +18,7 @@
                             <div class="col-md-4 showcase-item">
                                 <div class="card card-orange" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h6 class="card-title color-orange text-center">Индивидуальные</h6>
+                                        <h6 class="card-title color-orange text-center">Индивидуальные занятия</h6>
                                         <p class="card-text card-price-text text-center">
                                             от 400 руб/час<br>
                                         </p>

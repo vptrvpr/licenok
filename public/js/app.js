@@ -39120,7 +39120,7 @@ var staticRenderFns = [
           _c("a", { staticClass: "js-target-scroll", attrs: { href: "/" } }, [
             _c("img", {
               staticClass: "logo-desktop-sidebar",
-              attrs: { src: "images/logo_2.png", height: "150px" }
+              attrs: { src: "images/logo_3.png", height: "150px" }
             })
           ])
         ]),
@@ -40900,7 +40900,7 @@ var staticRenderFns = [
                           {
                             staticClass: "card-title color-orange text-center"
                           },
-                          [_vm._v("Индивидуальные")]
+                          [_vm._v("Индивидуальные занятия")]
                         ),
                         _vm._v(" "),
                         _c(

@@ -17,7 +17,7 @@
 
                                 </div>
                                 <div class="col-md-1 col-sm-6 col-sx-6">
-                                    <img class="left-animation" src="images/logo-sites.png" height="300px">
+                                    <img class="left-animation" src="images/logo-sites_1.png" height="300px">
                                 </div>
                                 <div class="col-md-7 col-sm-6 col-sx-6 hidden-md hidden-sm hidden-xs"></div>
                                 <div class="col-md-3 cloud-soc right-animation hidden-md hidden-sm hidden-xs">

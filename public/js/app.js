@@ -40277,7 +40277,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "col-md-1 col-sm-6 col-sx-6" }, [
                 _c("img", {
                   staticClass: "left-animation",
-                  attrs: { src: "images/logo-sites.png", height: "300px" }
+                  attrs: { src: "images/logo-sites_1.png", height: "300px" }
                 })
               ]),
               _vm._v(" "),

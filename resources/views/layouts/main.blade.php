@@ -15,7 +15,7 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Montserrat:400,500,700|Playfair+Display:400,400i,700,700i&amp;subset=cyrillic"
           rel="stylesheet">
-    <link href="{{env('APP_URL')}}css/style.css?213223333" rel="stylesheet" media="screen">
+    <link href="{{env('APP_URL')}}css/style.css?2132233333" rel="stylesheet" media="screen">
 </head>
 <body>
 <!-- SCRIPTS -->
@@ -23,7 +23,7 @@
     @yield('content')
 </div>
 <script src="{{env('APP_URL')}}js/jquery.min.js"></script>
-<script src="{{env('APP_URL')}}js/app.js?121223313"></script>
+<script src="{{env('APP_URL')}}js/app.js?1212233131"></script>
 <script src="{{env('APP_URL')}}js/bootstrap.min.js"></script>
 <script src="{{env('APP_URL')}}js/animsition.min.js"></script>
 <script src="{{env('APP_URL')}}js/noframework.waypoints.min.js"></script>
@@ -37,7 +37,7 @@
 <script src="{{env('APP_URL')}}js/interface.js"></script>
 <script src="{{env('APP_URL')}}js/lazy-line-painter-1.9.6.min.js"></script>
 
-<script src="{{env('APP_URL')}}js/main.js?121123333"></script>
+<script src="{{env('APP_URL')}}js/main.js?1211233332"></script>
 
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>-->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>-->
